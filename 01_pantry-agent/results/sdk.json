@@ -1,0 +1,3242 @@
+{
+ "variant": "SDK",
+ "model": "claude-opus-5-5",
+ "effort": "medium",
+ "created": "2026-10-20T23:25:20",
+ "mean": {
+  "runs": 3,
+  "totals": {
+   "input_tokens": 41.3333,
+   "cache_read_input_tokens": 145136,
+   "cache_creation_input_tokens": 8024,
+   "output_tokens": 5907.3333,
+   "model_calls": 34.6667,
+   "tool_calls": 27.3333,
+   "cost_usd": 0.2118,
+   "seconds": 83.6033,
+   "cache_hit_pct": 94.7333
+  },
+  "per_turn": [
+   {
+    "session": 1,
+    "turn": 1,
+    "input_tokens": 6,
+    "cache_read_input_tokens": 10629,
+    "cache_creation_input_tokens": 220.3333,
+    "output_tokens": 538,
+    "model_calls": 6,
+    "cost_usd": 0.0149,
+    "seconds": 8.2567,
+    "tool_calls": 5
+   },
+   {
+    "session": 1,
+    "turn": 2,
+    "input_tokens": 10.6667,
+    "cache_read_input_tokens": 25600.3333,
+    "cache_creation_input_tokens": 2294.6667,
+    "output_tokens": 1604,
+    "model_calls": 9.6667,
+    "cost_usd": 0.0556,
+    "seconds": 22.49,
+    "tool_calls": 8.6667
+   },
+   {
+    "session": 1,
+    "turn": 3,
+    "input_tokens": 6,
+    "cache_read_input_tokens": 20616.3333,
+    "cache_creation_input_tokens": 1359.6667,
+    "output_tokens": 771.6667,
+    "model_calls": 4,
+    "cost_usd": 0.0305,
+    "seconds": 10.2867,
+    "tool_calls": 3
+   },
+   {
+    "session": 1,
+    "turn": 4,
+    "input_tokens": 4,
+    "cache_read_input_tokens": 15803.6667,
+    "cache_creation_input_tokens": 995.6667,
+    "output_tokens": 707.3333,
+    "model_calls": 3.3333,
+    "cost_usd": 0.0253,
+    "seconds": 9.0433,
+    "tool_calls": 2.3333
+   },
+   {
+    "session": 2,
+    "turn": 5,
+    "input_tokens": 4,
+    "cache_read_input_tokens": 17931.3333,
+    "cache_creation_input_tokens": 729.3333,
+    "output_tokens": 160.6667,
+    "model_calls": 2,
+    "cost_usd": 0.0126,
+    "seconds": 4.4167,
+    "tool_calls": 1
+   },
+   {
+    "session": 2,
+    "turn": 6,
+    "input_tokens": 8.6667,
+    "cache_read_input_tokens": 43510,
+    "cache_creation_input_tokens": 1745.6667,
+    "output_tokens": 1314,
+    "model_calls": 8.6667,
+    "cost_usd": 0.049,
+    "seconds": 18.4833,
+    "tool_calls": 7.3333
+   },
+   {
+    "session": 2,
+    "turn": 7,
+    "input_tokens": 2,
+    "cache_read_input_tokens": 11045.3333,
+    "cache_creation_input_tokens": 678.6667,
+    "output_tokens": 811.6667,
+    "model_calls": 1,
+    "cost_usd": 0.0239,
+    "seconds": 10.6267,
+    "tool_calls": 0
+   }
+  ],
+  "check_pass_rate": {
+   "household_size_s1": 1.0,
+   "mushrooms_disliked_s1": 1.0,
+   "one_dairy_dinner_s1": 1.0,
+   "mushrooms_not_disliked_final": 1.0,
+   "wednesday_mushroom_dinner": 1.0,
+   "no_meat_dairy_mix": 1.0,
+   "shopping_no_duplicates": 1.0,
+   "eggs_reduced_by_pantry": 1.0,
+   "servings_doubled": 0.0,
+   "lookup_product_called": 1.0,
+   "turn5_from_memory": 0.0
+  },
+  "checks_passed": 9,
+  "checks_total": 11
+ },
+ "loc": {
+  "API": {
+   "per_file": {
+    "__init__": 6,
+    "caching": 33,
+    "compaction": 52,
+    "context": 60,
+    "history": 36,
+    "loop": 84,
+    "memory": 20,
+    "tokens": 27,
+    "tools": 31
+   },
+   "total": 349
+  },
+  "SDK": {
+   "replaces": {
+    "history": 2,
+    "loop": 3,
+    "memory": 1,
+    "tokens": 2,
+    "tools": 8
+   },
+   "marked_total": 16,
+   "tools_py_total": 33,
+   "agent_py_total": 141
+  }
+ },
+ "runs": [
+  {
+   "variant": "SDK",
+   "started": "2026-10-20T23:20:54",
+   "scenario": {
+    "model": "claude-opus-5-5",
+    "effort": "medium",
+    "sessions": [
+     {
+      "id": 1,
+      "turns": [
+       {
+        "n": 1,
+        "user": "אנחנו משפחה של 4, שומרים כשרות, ולא אוהבים פטריות. תזכור את זה."
+       },
+       {
+        "n": 2,
+        "user": "תתכנן 3 ארוחות ערב לראשון עד שלישי, אחת מהן חלבית."
+       },
+       {
+        "n": 3,
+        "user": "יש לי בבית 6 ביצים ושקית אורז."
+       },
+       {
+        "n": 4,
+        "user": "תבנה את רשימת הקניות, ותבדוק פרטי מוצר של טחינה גולמית."
+       }
+      ]
+     },
+     {
+      "id": 2,
+      "turns": [
+       {
+        "n": 5,
+        "user": "אילו מאכלים אני לא אוהב/ת?"
+       },
+       {
+        "n": 6,
+        "user": "בעצם, עכשיו אנחנו כן אוהבים פטריות. תוסיף ארוחת ערב עם פטריות ביום רביעי."
+       },
+       {
+        "n": 7,
+        "user": "יש לנו אורחים לשבת, נהיה 8. תעדכן את רשימת הקניות."
+       }
+      ]
+     }
+    ],
+    "checks": [
+     {
+      "id": "household_size_s1",
+      "type": "state",
+      "description": "preferences.household_size == 4 after session 1"
+     },
+     {
+      "id": "mushrooms_disliked_s1",
+      "type": "state",
+      "description": "mushrooms are in dislikes after session 1"
+     },
+     {
+      "id": "one_dairy_dinner_s1",
+      "type": "state",
+      "description": "session 1 plans 3 dinners Sunday-Tuesday, exactly one of them dairy"
+     },
+     {
+      "id": "mushrooms_not_disliked_final",
+      "type": "state",
+      "description": "mushrooms/פטריות are NOT in dislikes at the end (contradiction handled)"
+     },
+     {
+      "id": "wednesday_mushroom_dinner",
+      "type": "state",
+      "description": "final plan has a Wednesday dinner containing mushrooms"
+     },
+     {
+      "id": "no_meat_dairy_mix",
+      "type": "state",
+      "description": "no day+meal in any snapshot mixes meat and dairy"
+     },
+     {
+      "id": "shopping_no_duplicates",
+      "type": "state",
+      "description": "no shopping list snapshot has a duplicate name+unit"
+     },
+     {
+      "id": "eggs_reduced_by_pantry",
+      "type": "state",
+      "description": "session-1 shopping list eggs = planned eggs - 6 in pantry"
+     },
+     {
+      "id": "servings_doubled",
+      "type": "state",
+      "description": "final shopping list ≈ 2x the session-1 list for items unaffected by session-2 changes (servings 8)"
+     },
+     {
+      "id": "lookup_product_called",
+      "type": "trace",
+      "description": "lookup_product was called at least once"
+     },
+     {
+      "id": "turn5_from_memory",
+      "type": "trace",
+      "description": "turn 5 answer mentions mushrooms, sourced from get_preferences/memory with no session-1 messages in the model context"
+     }
+    ]
+   },
+   "sessions": [
+    {
+     "id": 1,
+     "turns": [
+      {
+       "text": "שמרתי את הפרטים שלכם 😊\n- **גודל המשפחה:** 4 נפשות\n- **כשרות:** אתם שומרים כשרות, אז לא אשלב בשר וחלב באותה ארוחה.\n- **לא אוהבים:** פטריות. שמרתי את זה גם במילה האנגלית \"mushrooms\", כדי שמתכונים עם פטריות לא יופיעו בחיפוש.\n\nרוצים שנתכנן ביחד ארוחות לשבוע?",
+       "tool_calls": [
+        {
+         "name": "get_preferences",
+         "input": {},
+         "result": "No preferences stored.",
+         "is_error": false
+        },
+        {
+         "name": "remember",
+         "input": {
+          "key": "household_size",
+          "value": 4
+         },
+         "result": "Remembered household_size = 4",
+         "is_error": false
+        },
+        {
+         "name": "remember",
+         "input": {
+          "key": "kashrut",
+          "value": "strict"
+         },
+         "result": "Remembered kashrut = \"strict\"",
+         "is_error": false
+        },
+        {
+         "name": "remember",
+         "input": {
+          "key": "dislikes",
+          "value": "פטריות"
+         },
+         "result": "Remembered dislikes = [\"פטריות\"]",
+         "is_error": false
+        },
+        {
+         "name": "remember",
+         "input": {
+          "key": "dislikes",
+          "value": "mushrooms"
+         },
+         "result": "Remembered dislikes = [\"פטריות\", \"mushrooms\"]",
+         "is_error": false
+        }
+       ],
+       "context_user_messages": [
+        "אנחנו משפחה של 4, שומרים כשרות, ולא אוהבים פטריות. תזכור את זה."
+       ],
+       "memory_loaded": false,
+       "model_calls": 6,
+       "stop_reason": "end_turn",
+       "usage": {
+        "input_tokens": 6,
+        "cache_read_input_tokens": 10263,
+        "cache_creation_input_tokens": 661,
+        "output_tokens": 585,
+        "cost_usd": 0.019375,
+        "cumulative_cost_usd": 0.019375299999999998,
+        "calls": 6
+       },
+       "session_id": "3b908e62-49f8-4fc5-a3b1-fc149e4e7364",
+       "is_error": false,
+       "n": 1,
+       "user": "אנחנו משפחה של 4, שומרים כשרות, ולא אוהבים פטריות. תזכור את זה.",
+       "seconds": 7.96
+      },
+      {
+       "text": "שלוש ארוחות הערב בלוח, כולן בלי פטריות 🍽️\n\n| יום | ארוחת ערב | סוג |\n|---|---|---|\n| **ראשון** | עוף בסופריטו עם תפוחי אדמה | בשרי |\n| **שני** | בורקס גבינה עם סלט ישראלי | חלבי |\n| **שלישי** | קציצות ברוטב עגבניות | בשרי |\n\n**רשימת הקניות ל-4 סועדים** (בלי מה שכבר יש במזווה; עיגלתי כמה כמויות כלפי מעלה):\n- **בשר ועוף:** שוקי עוף (ירכיים) 800 גרם, בשר בקר טחון 500 גרם\n- **חלבי וביצים:** קוטג' כ-170 גרם, גבינת פטה כ-135 גרם, 3 ביצים\n- **ירקות:** 4 מלפפונים, 4 עגבניות, 2 בצלים, 7 שיני שום, לימון אחד, צרור פטרוזיליה, תפוחי אדמה כ-670 גרם\n- **מזווה:** עגבניות מרוסקות 800 גרם, בצק עלים כ-335 גרם, פירורי לחם 50 גרם, שמן 40 מ\"ל, שמן זית 30 מ\"ל, שומשום כ-1.5 כפות, כורכום כ-¾ כפית, מלח כ-3 כפיות\n\nאפשר להחליף מנה אם תרצו, למשל שניצל במקום הקציצות או בלינצ'ס במקום הבורקס.",
+       "tool_calls": [
+        {
+         "name": "get_preferences",
+         "input": {},
+         "result": "{\"household_size\":4,\"kashrut\":\"strict\",\"dislikes\":[\"פטריות\",\"mushrooms\"]}",
+         "is_error": false
+        },
+        {
+         "name": "search_recipes",
+         "input": {
+          "query": "",
+          "kind": "dairy",
+          "exclude_ingredients": [
+           "mushroom",
+           "פטריות"
+          ]
+         },
+         "result": "r07 Cheese Bourekas (dairy)\nr10 Cheese Blintzes (dairy)",
+         "is_error": false
+        },
+        {
+         "name": "search_recipes",
+         "input": {
+          "query": "",
+          "kind": "meat",
+          "exclude_ingredients": [
+           "mushroom",
+           "פטריות"
+          ]
+         },
+         "result": "r01 Chicken Schnitzel (meat)\nr02 Sofrito Chicken with Potatoes (meat)\nr04 Meatballs in Tomato Sauce (meat)\nr05 Chicken Soup with Kneidlach (meat)\nr06 Cholent (meat)",
+         "is_error": false
+        },
+        {
+         "name": "search_recipes",
+         "input": {
+          "query": "",
+          "kind": "parve",
+          "exclude_ingredients": [
+           "mushroom",
+           "פטריות"
+          ]
+         },
+         "result": "r11 Shakshuka (parve)\nr12 Israeli Salad (parve)\nr13 Hummus (parve)\nr14 Falafel (parve)\nr15 Majadra (parve)",
+         "is_error": false
+        },
+        {
+         "name": "save_meal_plan",
+         "input": {
+          "day": "sunday",
+          "meal": "dinner",
+          "recipe_id": "r02"
+         },
+         "result": "Saved r02 Sofrito Chicken with Potatoes to sunday dinner. Slot now: r02",
+         "is_error": false
+        },
+        {
+         "name": "save_meal_plan",
+         "input": {
+          "day": "monday",
+          "meal": "dinner",
+          "recipe_id": "r07"
+         },
+         "result": "Saved r07 Cheese Bourekas to monday dinner. Slot now: r07",
+         "is_error": false
+        },
+        {
+         "name": "save_meal_plan",
+         "input": {
+          "day": "monday",
+          "meal": "dinner",
+          "recipe_id": "r12"
+         },
+         "result": "Saved r12 Israeli Salad to monday dinner. Slot now: r07, r12",
+         "is_error": false
+        },
+        {
+         "name": "save_meal_plan",
+         "input": {
+          "day": "tuesday",
+          "meal": "dinner",
+          "recipe_id": "r04"
+         },
+         "result": "Saved r04 Meatballs in Tomato Sauce to tuesday dinner. Slot now: r04",
+         "is_error": false
+        },
+        {
+         "name": "build_shopping_list",
+         "input": {
+          "servings": 4
+         },
+         "result": "Shopping list (20 items, 4 recipes, 4 servings each): breadcrumbs 50 g; chicken thighs 800 g; cottage cheese 166.67 g; crushed tomatoes 800 g; cucumbers 4 unit; eggs 2.33 unit; feta cheese 133.33 g; garlic 7 clove; ground beef 500 g; lemon 1 unit; oil 40 ml; olive oil 30 ml; onion 2 unit; parsley 1 bunch; potatoes 666.67 g; puff pastry 333.33 g; salt 2.67 tsp; sesame seeds 1.33 tbsp; tomatoes 4 unit; turmeric 0.67 tsp",
+         "is_error": false
+        }
+       ],
+       "context_user_messages": [
+        "אנחנו משפחה של 4, שומרים כשרות, ולא אוהבים פטריות. תזכור את זה.",
+        "תתכנן 3 ארוחות ערב לראשון עד שלישי, אחת מהן חלבית."
+       ],
+       "memory_loaded": false,
+       "model_calls": 10,
+       "stop_reason": "end_turn",
+       "usage": {
+        "input_tokens": 10,
+        "cache_read_input_tokens": 23877,
+        "cache_creation_input_tokens": 2309,
+        "output_tokens": 1613,
+        "cost_usd": 0.055547,
+        "cumulative_cost_usd": 0.0749227,
+        "calls": 10
+       },
+       "session_id": "3b908e62-49f8-4fc5-a3b1-fc149e4e7364",
+       "is_error": false,
+       "n": 2,
+       "user": "תתכנן 3 ארוחות ערב לראשון עד שלישי, אחת מהן חלבית.",
+       "seconds": 21.33
+      },
+      {
+       "text": "הוספתי למזווה 6 ביצים ושקית אורז 🥚\n- **ביצים:** המתכונים צריכים פחות מ-3, אז הביצים ירדו מרשימת הקניות.\n- **אורז:** לא ציינת כמה יש בשקית, אז רשמתי 1 ק\"ג. אם הכמות שונה, תגידו לי ואעדכן. אף אחת מהמנות בתפריט לא משתמשת באורז, אז הוא לא משנה את הרשימה. אם תרצו לנצל אותו, אפשר להחליף אחת המנות במג'דרה.\n\nשאר הרשימה נשארה כמו שהייתה (19 פריטים).",
+       "tool_calls": [
+        {
+         "name": "update_pantry",
+         "input": {
+          "item": "eggs",
+          "qty": 6,
+          "unit": "unit"
+         },
+         "result": "Pantry: eggs = 6 unit. 1 items in pantry.",
+         "is_error": false
+        },
+        {
+         "name": "update_pantry",
+         "input": {
+          "item": "rice",
+          "qty": 1000,
+          "unit": "g"
+         },
+         "result": "Pantry: rice = 1000 g. 2 items in pantry.",
+         "is_error": false
+        },
+        {
+         "name": "build_shopping_list",
+         "input": {
+          "servings": 4
+         },
+         "result": "Shopping list (19 items, 4 recipes, 4 servings each): breadcrumbs 50 g; chicken thighs 800 g; cottage cheese 166.67 g; crushed tomatoes 800 g; cucumbers 4 unit; feta cheese 133.33 g; garlic 7 clove; ground beef 500 g; lemon 1 unit; oil 40 ml; olive oil 30 ml; onion 2 unit; parsley 1 bunch; potatoes 666.67 g; puff pastry 333.33 g; salt 2.67 tsp; sesame seeds 1.33 tbsp; tomatoes 4 unit; turmeric 0.67 tsp",
+         "is_error": false
+        }
+       ],
+       "context_user_messages": [
+        "אנחנו משפחה של 4, שומרים כשרות, ולא אוהבים פטריות. תזכור את זה.",
+        "תתכנן 3 ארוחות ערב לראשון עד שלישי, אחת מהן חלבית.",
+        "יש לי בבית 6 ביצים ושקית אורז."
+       ],
+       "memory_loaded": false,
+       "model_calls": 4,
+       "stop_reason": "end_turn",
+       "usage": {
+        "input_tokens": 6,
+        "cache_read_input_tokens": 20772,
+        "cache_creation_input_tokens": 1394,
+        "output_tokens": 576,
+        "cost_usd": 0.02685,
+        "cumulative_cost_usd": 0.1017731,
+        "calls": 4
+       },
+       "session_id": "3b908e62-49f8-4fc5-a3b1-fc149e4e7364",
+       "is_error": false,
+       "n": 3,
+       "user": "יש לי בבית 6 ביצים ושקית אורז.",
+       "seconds": 7.97
+      },
+      {
+       "text": "**רשימת הקניות ל-4 סועדים** (19 פריטים; עיגלתי כמה כמויות כלפי מעלה):\n- **בשר ועוף:** שוקי עוף (ירכיים) 800 גרם, בשר בקר טחון 500 גרם\n- **חלבי:** קוטג' כ-170 גרם, גבינת פטה כ-135 גרם\n- **ירקות:** 4 מלפפונים, 4 עגבניות, 2 בצלים, 7 שיני שום, לימון אחד, צרור פטרוזיליה, תפוחי אדמה כ-670 גרם\n- **מזווה:** עגבניות מרוסקות 800 גרם, בצק עלים כ-335 גרם, פירורי לחם 50 גרם, שמן 40 מ\"ל, שמן זית 30 מ\"ל, שומשום כ-1.5 כפות, כורכום כ-¾ כפית, מלח כ-3 כפיות\n\n**טחינה גולמית, הר ברכה** (ל-100 גרם):\n- אנרגיה: 650 קלוריות\n- חלבון: 24 גרם\n- שומן: 56 גרם\n- פחמימות: 9 גרם, מתוכן סוכרים 0.5 גרם\n\nשימו לב: הנתונים האלה הם דוגמה מקומית ולא נתונים עדכניים מ-Open Food Facts, כי החיפוש רץ במצב לא מקוון.\n\nטחינה לא נמצאת באף אחת מהמנות בתפריט, אז היא לא מופיעה ברשימה. רוצים להוסיף לתפריט מנה עם טחינה, למשל חומוס או פלאפל?",
+       "tool_calls": [
+        {
+         "name": "build_shopping_list",
+         "input": {
+          "servings": 4
+         },
+         "result": "Shopping list (19 items, 4 recipes, 4 servings each): breadcrumbs 50 g; chicken thighs 800 g; cottage cheese 166.67 g; crushed tomatoes 800 g; cucumbers 4 unit; feta cheese 133.33 g; garlic 7 clove; ground beef 500 g; lemon 1 unit; oil 40 ml; olive oil 30 ml; onion 2 unit; parsley 1 bunch; potatoes 666.67 g; puff pastry 333.33 g; salt 2.67 tsp; sesame seeds 1.33 tbsp; tomatoes 4 unit; turmeric 0.67 tsp",
+         "is_error": false
+        },
+        {
+         "name": "lookup_product",
+         "input": {
+          "name": "tahini"
+         },
+         "result": "(offline) Raw Tahini — Har Bracha; per 100g: energy-kcal=650, proteins=24, fat=56, carbohydrates=9, sugars=0.5",
+         "is_error": false
+        }
+       ],
+       "context_user_messages": [
+        "אנחנו משפחה של 4, שומרים כשרות, ולא אוהבים פטריות. תזכור את זה.",
+        "תתכנן 3 ארוחות ערב לראשון עד שלישי, אחת מהן חלבית.",
+        "יש לי בבית 6 ביצים ושקית אורז.",
+        "תבנה את רשימת הקניות, ותבדוק פרטי מוצר של טחינה גולמית."
+       ],
+       "memory_loaded": false,
+       "model_calls": 3,
+       "stop_reason": "end_turn",
+       "usage": {
+        "input_tokens": 4,
+        "cache_read_input_tokens": 15794,
+        "cache_creation_input_tokens": 820,
+        "output_tokens": 712,
+        "cost_usd": 0.023975,
+        "cumulative_cost_usd": 0.1257479,
+        "calls": 3
+       },
+       "session_id": "3b908e62-49f8-4fc5-a3b1-fc149e4e7364",
+       "is_error": false,
+       "n": 4,
+       "user": "תבנה את רשימת הקניות, ותבדוק פרטי מוצר של טחינה גולמית.",
+       "seconds": 8.18
+      }
+     ],
+     "state": {
+      "preferences": {
+       "household_size": 4,
+       "kashrut": "strict",
+       "dislikes": [
+        "פטריות",
+        "mushrooms"
+       ]
+      },
+      "pantry": [
+       {
+        "name": "eggs",
+        "qty": 6.0,
+        "unit": "unit"
+       },
+       {
+        "name": "rice",
+        "qty": 1000.0,
+        "unit": "g"
+       }
+      ],
+      "meal_plan": {
+       "sunday": {
+        "dinner": [
+         "r02"
+        ]
+       },
+       "monday": {
+        "dinner": [
+         "r07",
+         "r12"
+        ]
+       },
+       "tuesday": {
+        "dinner": [
+         "r04"
+        ]
+       }
+      },
+      "shopping_list": [
+       {
+        "name": "breadcrumbs",
+        "qty": 50.0,
+        "unit": "g"
+       },
+       {
+        "name": "chicken thighs",
+        "qty": 800.0,
+        "unit": "g"
+       },
+       {
+        "name": "cottage cheese",
+        "qty": 166.67,
+        "unit": "g"
+       },
+       {
+        "name": "crushed tomatoes",
+        "qty": 800.0,
+        "unit": "g"
+       },
+       {
+        "name": "cucumbers",
+        "qty": 4.0,
+        "unit": "unit"
+       },
+       {
+        "name": "feta cheese",
+        "qty": 133.33,
+        "unit": "g"
+       },
+       {
+        "name": "garlic",
+        "qty": 7.0,
+        "unit": "clove"
+       },
+       {
+        "name": "ground beef",
+        "qty": 500.0,
+        "unit": "g"
+       },
+       {
+        "name": "lemon",
+        "qty": 1.0,
+        "unit": "unit"
+       },
+       {
+        "name": "oil",
+        "qty": 40.0,
+        "unit": "ml"
+       },
+       {
+        "name": "olive oil",
+        "qty": 30.0,
+        "unit": "ml"
+       },
+       {
+        "name": "onion",
+        "qty": 2.0,
+        "unit": "unit"
+       },
+       {
+        "name": "parsley",
+        "qty": 1.0,
+        "unit": "bunch"
+       },
+       {
+        "name": "potatoes",
+        "qty": 666.67,
+        "unit": "g"
+       },
+       {
+        "name": "puff pastry",
+        "qty": 333.33,
+        "unit": "g"
+       },
+       {
+        "name": "salt",
+        "qty": 2.67,
+        "unit": "tsp"
+       },
+       {
+        "name": "sesame seeds",
+        "qty": 1.33,
+        "unit": "tbsp"
+       },
+       {
+        "name": "tomatoes",
+        "qty": 4.0,
+        "unit": "unit"
+       },
+       {
+        "name": "turmeric",
+        "qty": 0.67,
+        "unit": "tsp"
+       }
+      ]
+     }
+    },
+    {
+     "id": 2,
+     "turns": [
+      {
+       "text": "לפי מה ששמור אצלי, הדבר היחיד שאתם לא אוהבים הוא **פטריות** 🍄 (שמורות גם במילה האנגלית \"mushrooms\", כדי שהחיפוש ידלג על מתכונים איתן).\n\nיש עוד משהו שתרצו שאוסיף?",
+       "tool_calls": [
+        {
+         "name": "get_preferences",
+         "input": {},
+         "result": "{\"household_size\":4,\"kashrut\":\"strict\",\"dislikes\":[\"פטריות\",\"mushrooms\"]}",
+         "is_error": false
+        }
+       ],
+       "context_user_messages": [
+        "אנחנו משפחה של 4, שומרים כשרות, ולא אוהבים פטריות. תזכור את זה.",
+        "תתכנן 3 ארוחות ערב לראשון עד שלישי, אחת מהן חלבית.",
+        "יש לי בבית 6 ביצים ושקית אורז.",
+        "תבנה את רשימת הקניות, ותבדוק פרטי מוצר של טחינה גולמית.",
+        "אילו מאכלים אני לא אוהב/ת?"
+       ],
+       "memory_loaded": false,
+       "model_calls": 2,
+       "stop_reason": "end_turn",
+       "usage": {
+        "input_tokens": 4,
+        "cache_read_input_tokens": 17767,
+        "cache_creation_input_tokens": 745,
+        "output_tokens": 152,
+        "cost_usd": 0.012569,
+        "cumulative_cost_usd": 0.13831729999999998,
+        "calls": 2
+       },
+       "session_id": "3b908e62-49f8-4fc5-a3b1-fc149e4e7364",
+       "is_error": false,
+       "n": 5,
+       "user": "אילו מאכלים אני לא אוהב/ת?",
+       "seconds": 3.73
+      },
+      {
+       "text": "עדכנתי את הזיכרון: פטריות כבר לא ברשימת הדברים שאתם לא אוהבים, ועכשיו הן ברשימת הדברים שאתם אוהבים 🍄\n\n**ביום רביעי בערב:** פסטה ברוטב שמנת ופטריות (חלבית).\n\n| יום | ארוחת ערב | סוג |\n|---|---|---|\n| ראשון | עוף בסופריטו עם תפוחי אדמה | בשרי |\n| שני | בורקס גבינה עם סלט ישראלי | חלבי |\n| שלישי | קציצות ברוטב עגבניות | בשרי |\n| **רביעי** | **פסטה ברוטב שמנת ופטריות** | **חלבי** |\n\nעדכנתי גם את רשימת הקניות (עכשיו 24 פריטים). נוספו פטריות 400 גרם, פסטה 500 גרם, שמנת מתוקה 250 מ\"ל, חמאה 30 גרם ופרמזן 50 גרם. השום עלה ל-10 שיניים והמלח לכ-4 כפיות.\n\nאם אתם מעדיפים ביום רביעי מנה בשרית או פרווה, יש גם תבשיל בקר ופטריות, קיש פטריות (חלבי) ומרק פטריות וגריסים (פרווה).",
+       "tool_calls": [
+        {
+         "name": "forget",
+         "input": {
+          "key": "dislikes",
+          "value": "פטריות"
+         },
+         "result": "Removed \"פטריות\" from dislikes.",
+         "is_error": false
+        },
+        {
+         "name": "forget",
+         "input": {
+          "key": "dislikes",
+          "value": "mushrooms"
+         },
+         "result": "Removed \"mushrooms\" from dislikes.",
+         "is_error": false
+        },
+        {
+         "name": "search_recipes",
+         "input": {
+          "query": "mushrooms"
+         },
+         "result": "r03 Beef and Mushroom Stew (meat)\nr08 Mushroom Quiche (dairy)\nr09 Pasta with Mushroom Cream Sauce (dairy)\nr20 Mushroom and Barley Soup (parve)",
+         "is_error": false
+        },
+        {
+         "name": "remember",
+         "input": {
+          "key": "likes",
+          "value": "פטריות"
+         },
+         "result": "Remembered likes = [\"פטריות\"]",
+         "is_error": false
+        },
+        {
+         "name": "remember",
+         "input": {
+          "key": "likes",
+          "value": "mushrooms"
+         },
+         "result": "Remembered likes = [\"פטריות\", \"mushrooms\"]",
+         "is_error": false
+        },
+        {
+         "name": "save_meal_plan",
+         "input": {
+          "day": "wednesday",
+          "meal": "dinner",
+          "recipe_id": "r09"
+         },
+         "result": "Saved r09 Pasta with Mushroom Cream Sauce to wednesday dinner. Slot now: r09",
+         "is_error": false
+        },
+        {
+         "name": "build_shopping_list",
+         "input": {
+          "servings": 4
+         },
+         "result": "Shopping list (24 items, 5 recipes, 4 servings each): breadcrumbs 50 g; butter 30 g; chicken thighs 800 g; cottage cheese 166.67 g; crushed tomatoes 800 g; cucumbers 4 unit; feta cheese 133.33 g; garlic 10 clove; ground beef 500 g; lemon 1 unit; mushrooms 400 g; oil 40 ml; olive oil 30 ml; onion 2 unit; parmesan 50 g; parsley 1 bunch; pasta 500 g; potatoes 666.67 g; puff pastry 333.33 g; salt 3.67 tsp; sesame seeds 1.33 tbsp; sweet cream 250 ml; tomatoes 4 unit; turmeric 0.67 tsp",
+         "is_error": false
+        }
+       ],
+       "context_user_messages": [
+        "אנחנו משפחה של 4, שומרים כשרות, ולא אוהבים פטריות. תזכור את זה.",
+        "תתכנן 3 ארוחות ערב לראשון עד שלישי, אחת מהן חלבית.",
+        "יש לי בבית 6 ביצים ושקית אורז.",
+        "תבנה את רשימת הקניות, ותבדוק פרטי מוצר של טחינה גולמית.",
+        "אילו מאכלים אני לא אוהב/ת?",
+        "בעצם, עכשיו אנחנו כן אוהבים פטריות. תוסיף ארוחת ערב עם פטריות ביום רביעי."
+       ],
+       "memory_loaded": false,
+       "model_calls": 8,
+       "stop_reason": "end_turn",
+       "usage": {
+        "input_tokens": 8,
+        "cache_read_input_tokens": 39319,
+        "cache_creation_input_tokens": 1602,
+        "output_tokens": 1125,
+        "cost_usd": 0.043212,
+        "cumulative_cost_usd": 0.18152909999999997,
+        "calls": 8
+       },
+       "session_id": "3b908e62-49f8-4fc5-a3b1-fc149e4e7364",
+       "is_error": false,
+       "n": 6,
+       "user": "בעצם, עכשיו אנחנו כן אוהבים פטריות. תוסיף ארוחת ערב עם פטריות ביום רביעי.",
+       "seconds": 13.06
+      },
+      {
+       "text": "לא שיניתי עדיין את רשימת הקניות, כי יש בעיה:\n\n1. **אין עדיין ארוחות לשבת.** בתפריט יש רק ארוחות ערב מראשון עד רביעי.\n2. **הרשימה מחושבת לפי מספר אחד לכל המתכונים.** אם אבנה אותה ל-8, גם ארוחות החול יוכפלו, ואתם בימי חול 4.\n\nלא שיניתי את גודל המשפחה השמור, כי האורחים הם רק לשבת.\n\nאז קודם כל צריך להחליט מה מבשלים לשבת. למשל:\n- **ליל שבת:** מרק עוף עם קניידלך, שניצל וסלט ישראלי\n- **צהרי שבת:** חמין\n\nכדי שהכמויות יתאימו, יש שתי אפשרויות:\n- **א.** להוסיף את ארוחות השבת ולבנות את הרשימה ל-8. כך גם ארוחות החול יחושבו ל-8 ויישארו לכם עודפים.\n- **ב.** לבנות את הרשימה ל-4, ואז להכפיל ידנית רק את המצרכים של מנות השבת.\n\nרוצים את ההצעה שלי לשבת, או שיש לכם מנות אחרות בראש? ואיזו אפשרות מתאימה לכם?",
+       "tool_calls": [],
+       "context_user_messages": [
+        "אנחנו משפחה של 4, שומרים כשרות, ולא אוהבים פטריות. תזכור את זה.",
+        "תתכנן 3 ארוחות ערב לראשון עד שלישי, אחת מהן חלבית.",
+        "יש לי בבית 6 ביצים ושקית אורז.",
+        "תבנה את רשימת הקניות, ותבדוק פרטי מוצר של טחינה גולמית.",
+        "אילו מאכלים אני לא אוהב/ת?",
+        "בעצם, עכשיו אנחנו כן אוהבים פטריות. תוסיף ארוחת ערב עם פטריות ביום רביעי.",
+        "יש לנו אורחים לשבת, נהיה 8. תעדכן את רשימת הקניות."
+       ],
+       "memory_loaded": false,
+       "model_calls": 1,
+       "stop_reason": "end_turn",
+       "usage": {
+        "input_tokens": 2,
+        "cache_read_input_tokens": 10909,
+        "cache_creation_input_tokens": 539,
+        "output_tokens": 684,
+        "cost_usd": 0.020182,
+        "cumulative_cost_usd": 0.20171089999999997,
+        "calls": 1
+       },
+       "session_id": "3b908e62-49f8-4fc5-a3b1-fc149e4e7364",
+       "is_error": false,
+       "n": 7,
+       "user": "יש לנו אורחים לשבת, נהיה 8. תעדכן את רשימת הקניות.",
+       "seconds": 9.07
+      }
+     ],
+     "state": {
+      "preferences": {
+       "household_size": 4,
+       "kashrut": "strict",
+       "dislikes": [],
+       "likes": [
+        "פטריות",
+        "mushrooms"
+       ]
+      },
+      "pantry": [
+       {
+        "name": "eggs",
+        "qty": 6.0,
+        "unit": "unit"
+       },
+       {
+        "name": "rice",
+        "qty": 1000.0,
+        "unit": "g"
+       }
+      ],
+      "meal_plan": {
+       "sunday": {
+        "dinner": [
+         "r02"
+        ]
+       },
+       "monday": {
+        "dinner": [
+         "r07",
+         "r12"
+        ]
+       },
+       "tuesday": {
+        "dinner": [
+         "r04"
+        ]
+       },
+       "wednesday": {
+        "dinner": [
+         "r09"
+        ]
+       }
+      },
+      "shopping_list": [
+       {
+        "name": "breadcrumbs",
+        "qty": 50.0,
+        "unit": "g"
+       },
+       {
+        "name": "butter",
+        "qty": 30.0,
+        "unit": "g"
+       },
+       {
+        "name": "chicken thighs",
+        "qty": 800.0,
+        "unit": "g"
+       },
+       {
+        "name": "cottage cheese",
+        "qty": 166.67,
+        "unit": "g"
+       },
+       {
+        "name": "crushed tomatoes",
+        "qty": 800.0,
+        "unit": "g"
+       },
+       {
+        "name": "cucumbers",
+        "qty": 4.0,
+        "unit": "unit"
+       },
+       {
+        "name": "feta cheese",
+        "qty": 133.33,
+        "unit": "g"
+       },
+       {
+        "name": "garlic",
+        "qty": 10.0,
+        "unit": "clove"
+       },
+       {
+        "name": "ground beef",
+        "qty": 500.0,
+        "unit": "g"
+       },
+       {
+        "name": "lemon",
+        "qty": 1.0,
+        "unit": "unit"
+       },
+       {
+        "name": "mushrooms",
+        "qty": 400.0,
+        "unit": "g"
+       },
+       {
+        "name": "oil",
+        "qty": 40.0,
+        "unit": "ml"
+       },
+       {
+        "name": "olive oil",
+        "qty": 30.0,
+        "unit": "ml"
+       },
+       {
+        "name": "onion",
+        "qty": 2.0,
+        "unit": "unit"
+       },
+       {
+        "name": "parmesan",
+        "qty": 50.0,
+        "unit": "g"
+       },
+       {
+        "name": "parsley",
+        "qty": 1.0,
+        "unit": "bunch"
+       },
+       {
+        "name": "pasta",
+        "qty": 500.0,
+        "unit": "g"
+       },
+       {
+        "name": "potatoes",
+        "qty": 666.67,
+        "unit": "g"
+       },
+       {
+        "name": "puff pastry",
+        "qty": 333.33,
+        "unit": "g"
+       },
+       {
+        "name": "salt",
+        "qty": 3.67,
+        "unit": "tsp"
+       },
+       {
+        "name": "sesame seeds",
+        "qty": 1.33,
+        "unit": "tbsp"
+       },
+       {
+        "name": "sweet cream",
+        "qty": 250.0,
+        "unit": "ml"
+       },
+       {
+        "name": "tomatoes",
+        "qty": 4.0,
+        "unit": "unit"
+       },
+       {
+        "name": "turmeric",
+        "qty": 0.67,
+        "unit": "tsp"
+       }
+      ]
+     }
+    }
+   ],
+   "turns": [
+    {
+     "session": 1,
+     "turn": 1,
+     "user": "אנחנו משפחה של 4, שומרים כשרות, ולא אוהבים פטריות. תזכור את זה.",
+     "answer": "שמרתי את הפרטים שלכם 😊\n- **גודל המשפחה:** 4 נפשות\n- **כשרות:** אתם שומרים כשרות, אז לא אשלב בשר וחלב באותה ארוחה.\n- **לא אוהבים:** פטריות. שמרתי את זה גם במילה האנגלית \"mushrooms\", כדי שמתכונים עם פטריות לא יופיעו בחיפוש.\n\nרוצים שנתכנן ביחד ארוחות לשבוע?",
+     "input_tokens": 6,
+     "cache_read_input_tokens": 10263,
+     "cache_creation_input_tokens": 661,
+     "output_tokens": 585,
+     "model_calls": 6,
+     "tools": [
+      "get_preferences",
+      "remember",
+      "remember",
+      "remember",
+      "remember"
+     ],
+     "cost_usd": 0.019375,
+     "seconds": 7.96
+    },
+    {
+     "session": 1,
+     "turn": 2,
+     "user": "תתכנן 3 ארוחות ערב לראשון עד שלישי, אחת מהן חלבית.",
+     "answer": "שלוש ארוחות הערב בלוח, כולן בלי פטריות 🍽️\n\n| יום | ארוחת ערב | סוג |\n|---|---|---|\n| **ראשון** | עוף בסופריטו עם תפוחי אדמה | בשרי |\n| **שני** | בורקס גבינה עם סלט ישראלי | חלבי |\n| **שלישי** | קציצות ברוטב עגבניות | בשרי |\n\n**רשימת הקניות ל-4 סועדים** (בלי מה שכבר יש במזווה; עיגלתי כמה כמויות כלפי …",
+     "input_tokens": 10,
+     "cache_read_input_tokens": 23877,
+     "cache_creation_input_tokens": 2309,
+     "output_tokens": 1613,
+     "model_calls": 10,
+     "tools": [
+      "get_preferences",
+      "search_recipes",
+      "search_recipes",
+      "search_recipes",
+      "save_meal_plan",
+      "save_meal_plan",
+      "save_meal_plan",
+      "save_meal_plan",
+      "build_shopping_list"
+     ],
+     "cost_usd": 0.055547,
+     "seconds": 21.33
+    },
+    {
+     "session": 1,
+     "turn": 3,
+     "user": "יש לי בבית 6 ביצים ושקית אורז.",
+     "answer": "הוספתי למזווה 6 ביצים ושקית אורז 🥚\n- **ביצים:** המתכונים צריכים פחות מ-3, אז הביצים ירדו מרשימת הקניות.\n- **אורז:** לא ציינת כמה יש בשקית, אז רשמתי 1 ק\"ג. אם הכמות שונה, תגידו לי ואעדכן. אף אחת מהמנות בתפריט לא משתמשת באורז, אז הוא לא משנה את הרשימה. אם תרצו לנצל אותו, אפשר להחליף אחת המנות במג'דרה.…",
+     "input_tokens": 6,
+     "cache_read_input_tokens": 20772,
+     "cache_creation_input_tokens": 1394,
+     "output_tokens": 576,
+     "model_calls": 4,
+     "tools": [
+      "update_pantry",
+      "update_pantry",
+      "build_shopping_list"
+     ],
+     "cost_usd": 0.02685,
+     "seconds": 7.97
+    },
+    {
+     "session": 1,
+     "turn": 4,
+     "user": "תבנה את רשימת הקניות, ותבדוק פרטי מוצר של טחינה גולמית.",
+     "answer": "**רשימת הקניות ל-4 סועדים** (19 פריטים; עיגלתי כמה כמויות כלפי מעלה):\n- **בשר ועוף:** שוקי עוף (ירכיים) 800 גרם, בשר בקר טחון 500 גרם\n- **חלבי:** קוטג' כ-170 גרם, גבינת פטה כ-135 גרם\n- **ירקות:** 4 מלפפונים, 4 עגבניות, 2 בצלים, 7 שיני שום, לימון אחד, צרור פטרוזיליה, תפוחי אדמה כ-670 גרם\n- **מזווה:**…",
+     "input_tokens": 4,
+     "cache_read_input_tokens": 15794,
+     "cache_creation_input_tokens": 820,
+     "output_tokens": 712,
+     "model_calls": 3,
+     "tools": [
+      "build_shopping_list",
+      "lookup_product"
+     ],
+     "cost_usd": 0.023975,
+     "seconds": 8.18
+    },
+    {
+     "session": 2,
+     "turn": 5,
+     "user": "אילו מאכלים אני לא אוהב/ת?",
+     "answer": "לפי מה ששמור אצלי, הדבר היחיד שאתם לא אוהבים הוא **פטריות** 🍄 (שמורות גם במילה האנגלית \"mushrooms\", כדי שהחיפוש ידלג על מתכונים איתן).\n\nיש עוד משהו שתרצו שאוסיף?",
+     "input_tokens": 4,
+     "cache_read_input_tokens": 17767,
+     "cache_creation_input_tokens": 745,
+     "output_tokens": 152,
+     "model_calls": 2,
+     "tools": [
+      "get_preferences"
+     ],
+     "cost_usd": 0.012569,
+     "seconds": 3.73
+    },
+    {
+     "session": 2,
+     "turn": 6,
+     "user": "בעצם, עכשיו אנחנו כן אוהבים פטריות. תוסיף ארוחת ערב עם פטריות ביום רביעי.",
+     "answer": "עדכנתי את הזיכרון: פטריות כבר לא ברשימת הדברים שאתם לא אוהבים, ועכשיו הן ברשימת הדברים שאתם אוהבים 🍄\n\n**ביום רביעי בערב:** פסטה ברוטב שמנת ופטריות (חלבית).\n\n| יום | ארוחת ערב | סוג |\n|---|---|---|\n| ראשון | עוף בסופריטו עם תפוחי אדמה | בשרי |\n| שני | בורקס גבינה עם סלט ישראלי | חלבי |\n| שלישי | קציצ…",
+     "input_tokens": 8,
+     "cache_read_input_tokens": 39319,
+     "cache_creation_input_tokens": 1602,
+     "output_tokens": 1125,
+     "model_calls": 8,
+     "tools": [
+      "forget",
+      "forget",
+      "search_recipes",
+      "remember",
+      "remember",
+      "save_meal_plan",
+      "build_shopping_list"
+     ],
+     "cost_usd": 0.043212,
+     "seconds": 13.06
+    },
+    {
+     "session": 2,
+     "turn": 7,
+     "user": "יש לנו אורחים לשבת, נהיה 8. תעדכן את רשימת הקניות.",
+     "answer": "לא שיניתי עדיין את רשימת הקניות, כי יש בעיה:\n\n1. **אין עדיין ארוחות לשבת.** בתפריט יש רק ארוחות ערב מראשון עד רביעי.\n2. **הרשימה מחושבת לפי מספר אחד לכל המתכונים.** אם אבנה אותה ל-8, גם ארוחות החול יוכפלו, ואתם בימי חול 4.\n\nלא שיניתי את גודל המשפחה השמור, כי האורחים הם רק לשבת.\n\nאז קודם כל צריך להחל…",
+     "input_tokens": 2,
+     "cache_read_input_tokens": 10909,
+     "cache_creation_input_tokens": 539,
+     "output_tokens": 684,
+     "model_calls": 1,
+     "tools": [],
+     "cost_usd": 0.020182,
+     "seconds": 9.07
+    }
+   ],
+   "totals": {
+    "input_tokens": 40,
+    "cache_read_input_tokens": 138701,
+    "cache_creation_input_tokens": 8070,
+    "output_tokens": 5447,
+    "model_calls": 34,
+    "tool_calls": 27,
+    "cost_usd": 0.20171,
+    "seconds": 71.3,
+    "cache_hit_pct": 94.5
+   },
+   "checks": [
+    {
+     "id": "household_size_s1",
+     "passed": true,
+     "detail": "household_size=4"
+    },
+    {
+     "id": "mushrooms_disliked_s1",
+     "passed": true,
+     "detail": "dislikes=['פטריות', 'mushrooms']"
+    },
+    {
+     "id": "one_dairy_dinner_s1",
+     "passed": true,
+     "detail": "dinners={'sunday': ['r02'], 'monday': ['r07', 'r12'], 'tuesday': ['r04']}"
+    },
+    {
+     "id": "mushrooms_not_disliked_final",
+     "passed": true,
+     "detail": "dislikes=[]"
+    },
+    {
+     "id": "wednesday_mushroom_dinner",
+     "passed": true,
+     "detail": "wednesday dinner=['r09']"
+    },
+    {
+     "id": "no_meat_dairy_mix",
+     "passed": true,
+     "detail": "all slots ok"
+    },
+    {
+     "id": "shopping_no_duplicates",
+     "passed": true,
+     "detail": "non-empty=True"
+    },
+    {
+     "id": "eggs_reduced_by_pantry",
+     "passed": true,
+     "detail": "needed=2.33333 pantry=6 listed=0 expected=0"
+    },
+    {
+     "id": "servings_doubled",
+     "passed": false,
+     "detail": "compared=17 off=['breadcrumbs:50->50', 'chicken thighs:800->800', 'cottage cheese:166.67->166.67', 'crushed tomatoes:800->800', 'cucumbers:4->4', 'feta cheese:133.33->133.33', 'ground beef:500->500', 'lemon:1->1', 'oil:40->40', 'olive oil:30->30', 'onion:2->2', 'parsley:1->1', 'potatoes:666.67->666.67', 'puff pastry:333.33->333.33', 'sesame seeds:1.33->1.33', 'tomatoes:4->4', 'turmeric:0.67->0.67']"
+    },
+    {
+     "id": "lookup_product_called",
+     "passed": true,
+     "detail": "lookup_product calls=1"
+    },
+    {
+     "id": "turn5_from_memory",
+     "passed": false,
+     "detail": "mentions=True memory=True context_clean=False"
+    }
+   ]
+  },
+  {
+   "variant": "SDK",
+   "started": "2026-10-20T23:22:11",
+   "scenario": {
+    "model": "claude-opus-5-5",
+    "effort": "medium",
+    "sessions": [
+     {
+      "id": 1,
+      "turns": [
+       {
+        "n": 1,
+        "user": "אנחנו משפחה של 4, שומרים כשרות, ולא אוהבים פטריות. תזכור את זה."
+       },
+       {
+        "n": 2,
+        "user": "תתכנן 3 ארוחות ערב לראשון עד שלישי, אחת מהן חלבית."
+       },
+       {
+        "n": 3,
+        "user": "יש לי בבית 6 ביצים ושקית אורז."
+       },
+       {
+        "n": 4,
+        "user": "תבנה את רשימת הקניות, ותבדוק פרטי מוצר של טחינה גולמית."
+       }
+      ]
+     },
+     {
+      "id": 2,
+      "turns": [
+       {
+        "n": 5,
+        "user": "אילו מאכלים אני לא אוהב/ת?"
+       },
+       {
+        "n": 6,
+        "user": "בעצם, עכשיו אנחנו כן אוהבים פטריות. תוסיף ארוחת ערב עם פטריות ביום רביעי."
+       },
+       {
+        "n": 7,
+        "user": "יש לנו אורחים לשבת, נהיה 8. תעדכן את רשימת הקניות."
+       }
+      ]
+     }
+    ],
+    "checks": [
+     {
+      "id": "household_size_s1",
+      "type": "state",
+      "description": "preferences.household_size == 4 after session 1"
+     },
+     {
+      "id": "mushrooms_disliked_s1",
+      "type": "state",
+      "description": "mushrooms are in dislikes after session 1"
+     },
+     {
+      "id": "one_dairy_dinner_s1",
+      "type": "state",
+      "description": "session 1 plans 3 dinners Sunday-Tuesday, exactly one of them dairy"
+     },
+     {
+      "id": "mushrooms_not_disliked_final",
+      "type": "state",
+      "description": "mushrooms/פטריות are NOT in dislikes at the end (contradiction handled)"
+     },
+     {
+      "id": "wednesday_mushroom_dinner",
+      "type": "state",
+      "description": "final plan has a Wednesday dinner containing mushrooms"
+     },
+     {
+      "id": "no_meat_dairy_mix",
+      "type": "state",
+      "description": "no day+meal in any snapshot mixes meat and dairy"
+     },
+     {
+      "id": "shopping_no_duplicates",
+      "type": "state",
+      "description": "no shopping list snapshot has a duplicate name+unit"
+     },
+     {
+      "id": "eggs_reduced_by_pantry",
+      "type": "state",
+      "description": "session-1 shopping list eggs = planned eggs - 6 in pantry"
+     },
+     {
+      "id": "servings_doubled",
+      "type": "state",
+      "description": "final shopping list ≈ 2x the session-1 list for items unaffected by session-2 changes (servings 8)"
+     },
+     {
+      "id": "lookup_product_called",
+      "type": "trace",
+      "description": "lookup_product was called at least once"
+     },
+     {
+      "id": "turn5_from_memory",
+      "type": "trace",
+      "description": "turn 5 answer mentions mushrooms, sourced from get_preferences/memory with no session-1 messages in the model context"
+     }
+    ]
+   },
+   "sessions": [
+    {
+     "id": 1,
+     "turns": [
+      {
+       "text": "שמרתי את הפרטים 😊\n- **גודל המשפחה:** 4\n- **כשרות:** שומרים כשרות, ולא אשלב בשר וחלב באותה ארוחה\n- **לא אוהבים:** פטריות. שמרתי את זה גם בעברית וגם באנגלית (mushrooms), כדי שמתכונים עם פטריות לא יופיעו בחיפוש.\n\nרוצים שנתכנן ארוחות לשבוע?",
+       "tool_calls": [
+        {
+         "name": "get_preferences",
+         "input": {},
+         "result": "No preferences stored.",
+         "is_error": false
+        },
+        {
+         "name": "remember",
+         "input": {
+          "key": "household_size",
+          "value": 4
+         },
+         "result": "Remembered household_size = 4",
+         "is_error": false
+        },
+        {
+         "name": "remember",
+         "input": {
+          "key": "kashrut",
+          "value": "kosher"
+         },
+         "result": "Remembered kashrut = \"kosher\"",
+         "is_error": false
+        },
+        {
+         "name": "remember",
+         "input": {
+          "key": "dislikes",
+          "value": "פטריות"
+         },
+         "result": "Remembered dislikes = [\"פטריות\"]",
+         "is_error": false
+        },
+        {
+         "name": "remember",
+         "input": {
+          "key": "dislikes",
+          "value": "mushrooms"
+         },
+         "result": "Remembered dislikes = [\"פטריות\", \"mushrooms\"]",
+         "is_error": false
+        }
+       ],
+       "context_user_messages": [
+        "אנחנו משפחה של 4, שומרים כשרות, ולא אוהבים פטריות. תזכור את זה."
+       ],
+       "memory_loaded": false,
+       "model_calls": 6,
+       "stop_reason": "end_turn",
+       "usage": {
+        "input_tokens": 6,
+        "cache_read_input_tokens": 10812,
+        "cache_creation_input_tokens": 0,
+        "output_tokens": 515,
+        "cost_usd": 0.012713,
+        "cumulative_cost_usd": 0.0127131,
+        "calls": 6
+       },
+       "session_id": "28671814-218a-415e-a331-16a939f35266",
+       "is_error": false,
+       "n": 1,
+       "user": "אנחנו משפחה של 4, שומרים כשרות, ולא אוהבים פטריות. תזכור את זה.",
+       "seconds": 9.36
+      },
+      {
+       "text": "הארוחות לראשון עד שלישי נכנסו לתכנון, ובניתי רשימת קניות ל-4 אנשים. אף מנה לא כוללת פטריות 😊\n\n**ארוחות ערב:**\n- **ראשון (בשרי):** עוף בסופריטו עם תפוחי אדמה\n- **שני (חלבי):** בורקס גבינה\n- **שלישי (בשרי):** קציצות ברוטב עגבניות\n\nבכל ארוחה יש מנה אחת בלבד, כך שאין בשר וחלב באותה ארוחה.\n\n**רשימת קניות** (מעוגלת כלפי מעלה לכמויות שקונים בפועל):\n- ירכי עוף: 800 גרם\n- בשר בקר טחון: 500 גרם\n- תפוחי אדמה: כ-700 גרם\n- עגבניות מרוסקות: 800 גרם\n- בצל: 1\n- שום: 7 שיניים\n- בצק עלים: כ-350 גרם\n- גבינת קוטג׳: כ-170 גרם\n- גבינת פטה: כ-140 גרם\n- ביצים: 3\n- פירורי לחם: 50 גרם\n- שמן: 40 מ\"ל\n- שומשום: כ-1.5 כפות\n- כורכום: כ-¾ כפית\n- מלח: כ-2 כפיות\n\nיש לכם בבית חלק מהמוצרים? ספרו לי ואעדכן את המזווה והרשימה. אפשר גם להוסיף לכל ערב מנה פרווה, למשל סלט ישראלי.",
+       "tool_calls": [
+        {
+         "name": "get_preferences",
+         "input": {},
+         "result": "{\"household_size\":4,\"kashrut\":\"kosher\",\"dislikes\":[\"פטריות\",\"mushrooms\"]}",
+         "is_error": false
+        },
+        {
+         "name": "search_recipes",
+         "input": {
+          "query": "dinner",
+          "exclude_ingredients": [
+           "mushrooms",
+           "פטריות"
+          ],
+          "kind": "meat"
+         },
+         "result": "No recipes found.",
+         "is_error": false
+        },
+        {
+         "name": "search_recipes",
+         "input": {
+          "query": "dinner",
+          "exclude_ingredients": [
+           "mushrooms",
+           "פטריות"
+          ],
+          "kind": "dairy"
+         },
+         "result": "No recipes found.",
+         "is_error": false
+        },
+        {
+         "name": "search_recipes",
+         "input": {
+          "query": "dinner",
+          "exclude_ingredients": [
+           "mushrooms",
+           "פטריות"
+          ],
+          "kind": "parve"
+         },
+         "result": "No recipes found.",
+         "is_error": false
+        },
+        {
+         "name": "search_recipes",
+         "input": {
+          "query": "",
+          "exclude_ingredients": [
+           "mushrooms",
+           "פטריות"
+          ],
+          "max_results": 30
+         },
+         "result": "r01 Chicken Schnitzel (meat)\nr02 Sofrito Chicken with Potatoes (meat)\nr04 Meatballs in Tomato Sauce (meat)\nr05 Chicken Soup with Kneidlach (meat)\nr06 Cholent (meat)\nr07 Cheese Bourekas (dairy)\nr10 Cheese Blintzes (dairy)\nr11 Shakshuka (parve)\nr12 Israeli Salad (parve)\nr13 Hummus (parve)\nr14 Falafel (parve)\nr15 Majadra (parve)\nr16 Stuffed Peppers with Rice (parve)\nr17 Red Lentil Soup (parve)\nr18 Sabich (parve)\nr19 Roasted Cauliflower with Tahini (parve)",
+         "is_error": false
+        },
+        {
+         "name": "save_meal_plan",
+         "input": {
+          "day": "sunday",
+          "meal": "dinner",
+          "recipe_id": "r02"
+         },
+         "result": "Saved r02 Sofrito Chicken with Potatoes to sunday dinner. Slot now: r02",
+         "is_error": false
+        },
+        {
+         "name": "save_meal_plan",
+         "input": {
+          "day": "monday",
+          "meal": "dinner",
+          "recipe_id": "r07"
+         },
+         "result": "Saved r07 Cheese Bourekas to monday dinner. Slot now: r07",
+         "is_error": false
+        },
+        {
+         "name": "save_meal_plan",
+         "input": {
+          "day": "tuesday",
+          "meal": "dinner",
+          "recipe_id": "r04"
+         },
+         "result": "Saved r04 Meatballs in Tomato Sauce to tuesday dinner. Slot now: r04",
+         "is_error": false
+        },
+        {
+         "name": "build_shopping_list",
+         "input": {
+          "servings": 4
+         },
+         "result": "Shopping list (15 items, 3 recipes, 4 servings each): breadcrumbs 50 g; chicken thighs 800 g; cottage cheese 166.67 g; crushed tomatoes 800 g; eggs 2.33 unit; feta cheese 133.33 g; garlic 7 clove; ground beef 500 g; oil 40 ml; onion 1 unit; potatoes 666.67 g; puff pastry 333.33 g; salt 1.67 tsp; sesame seeds 1.33 tbsp; turmeric 0.67 tsp",
+         "is_error": false
+        }
+       ],
+       "context_user_messages": [
+        "אנחנו משפחה של 4, שומרים כשרות, ולא אוהבים פטריות. תזכור את זה.",
+        "תתכנן 3 ארוחות ערב לראשון עד שלישי, אחת מהן חלבית."
+       ],
+       "memory_loaded": false,
+       "model_calls": 10,
+       "stop_reason": "end_turn",
+       "usage": {
+        "input_tokens": 12,
+        "cache_read_input_tokens": 28875,
+        "cache_creation_input_tokens": 2406,
+        "output_tokens": 1683,
+        "cost_usd": 0.058731,
+        "cumulative_cost_usd": 0.07144410000000001,
+        "calls": 10
+       },
+       "session_id": "28671814-218a-415e-a331-16a939f35266",
+       "is_error": false,
+       "n": 2,
+       "user": "תתכנן 3 ארוחות ערב לראשון עד שלישי, אחת מהן חלבית.",
+       "seconds": 26.57
+      },
+      {
+       "text": "הוספתי למזווה 6 ביצים ושקית אורז ועדכנתי את רשימת הקניות 👍\n\n- **ביצים:** ירדו מהרשימה. התפריט צריך רק 3, אז יישארו לכם עוד.\n- **אורז:** הוא לא נדרש באף אחת משלוש הארוחות, אבל שמרתי אותו במזווה לתכנונים הבאים. רשמתי שקית של קילו כי זה הגודל הנפוץ. אם השקית בגודל אחר, ספרו לי ואתקן.\n\n**רשימת הקניות המעודכנת:**\n- ירכי עוף: 800 גרם\n- בשר בקר טחון: 500 גרם\n- תפוחי אדמה: כ-700 גרם\n- עגבניות מרוסקות: 800 גרם\n- בצל: 1\n- שום: 7 שיניים\n- בצק עלים: כ-350 גרם\n- גבינת קוטג׳: כ-170 גרם\n- גבינת פטה: כ-140 גרם\n- פירורי לחם: 50 גרם\n- שמן: 40 מ\"ל\n- שומשום: כ-1.5 כפות\n- כורכום: כ-¾ כפית\n- מלח: כ-2 כפיות\n\nאם תרצו להשתמש באורז, אפשר להחליף אחת מארוחות הערב במג׳דרה או בפלפלים ממולאים באורז. שתיהן פרווה.",
+       "tool_calls": [
+        {
+         "name": "update_pantry",
+         "input": {
+          "item": "eggs",
+          "qty": 6,
+          "unit": "unit"
+         },
+         "result": "Pantry: eggs = 6 unit. 1 items in pantry.",
+         "is_error": false
+        },
+        {
+         "name": "update_pantry",
+         "input": {
+          "item": "rice",
+          "qty": 1000,
+          "unit": "g"
+         },
+         "result": "Pantry: rice = 1000 g. 2 items in pantry.",
+         "is_error": false
+        },
+        {
+         "name": "build_shopping_list",
+         "input": {
+          "servings": 4
+         },
+         "result": "Shopping list (14 items, 3 recipes, 4 servings each): breadcrumbs 50 g; chicken thighs 800 g; cottage cheese 166.67 g; crushed tomatoes 800 g; feta cheese 133.33 g; garlic 7 clove; ground beef 500 g; oil 40 ml; onion 1 unit; potatoes 666.67 g; puff pastry 333.33 g; salt 1.67 tsp; sesame seeds 1.33 tbsp; turmeric 0.67 tsp",
+         "is_error": false
+        }
+       ],
+       "context_user_messages": [
+        "אנחנו משפחה של 4, שומרים כשרות, ולא אוהבים פטריות. תזכור את זה.",
+        "תתכנן 3 ארוחות ערב לראשון עד שלישי, אחת מהן חלבית.",
+        "יש לי בבית 6 ביצים ושקית אורז."
+       ],
+       "memory_loaded": false,
+       "model_calls": 4,
+       "stop_reason": "end_turn",
+       "usage": {
+        "input_tokens": 6,
+        "cache_read_input_tokens": 20957,
+        "cache_creation_input_tokens": 1405,
+        "output_tokens": 909,
+        "cost_usd": 0.033635,
+        "cumulative_cost_usd": 0.1050795,
+        "calls": 4
+       },
+       "session_id": "28671814-218a-415e-a331-16a939f35266",
+       "is_error": false,
+       "n": 3,
+       "user": "יש לי בבית 6 ביצים ושקית אורז.",
+       "seconds": 13.33
+      },
+      {
+       "text": "בניתי שוב את רשימת הקניות ובדקתי את הטחינה 😊\n\n**רשימת קניות ל-4 אנשים** (לא השתנתה מהפעם הקודמת):\n- ירכי עוף: 800 גרם\n- בשר בקר טחון: 500 גרם\n- תפוחי אדמה: כ-700 גרם\n- עגבניות מרוסקות: 800 גרם\n- בצל: 1\n- שום: 7 שיניים\n- בצק עלים: כ-350 גרם\n- גבינת קוטג׳: כ-170 גרם\n- גבינת פטה: כ-140 גרם\n- פירורי לחם: 50 גרם\n- שמן: 40 מ\"ל\n- שומשום: כ-1.5 כפות\n- כורכום: כ-¾ כפית\n- מלח: כ-2 כפיות\n\n**טחינה גולמית, הר ברכה** (ערכים ל-100 גרם):\n- אנרגיה: 650 קלוריות\n- חלבון: 24 גרם\n- שומן: 56 גרם\n- פחמימות: 9 גרם, מתוכן 0.5 גרם סוכר\n\nשימו לב: הנתונים לא הגיעו בזמן אמת מ-Open Food Facts. אלה נתוני דוגמה מקומיים, ולכן כדאי לבדוק גם על האריזה.\n\nהטחינה לא נדרשת באף אחת משלוש הארוחות. אם תרצו, אפשר להוסיף לתפריט מנה פרווה שמשתמשת בה, למשל כרובית צלויה עם טחינה או חומוס.",
+       "tool_calls": [
+        {
+         "name": "build_shopping_list",
+         "input": {
+          "servings": 4
+         },
+         "result": "Shopping list (14 items, 3 recipes, 4 servings each): breadcrumbs 50 g; chicken thighs 800 g; cottage cheese 166.67 g; crushed tomatoes 800 g; feta cheese 133.33 g; garlic 7 clove; ground beef 500 g; oil 40 ml; onion 1 unit; potatoes 666.67 g; puff pastry 333.33 g; salt 1.67 tsp; sesame seeds 1.33 tbsp; turmeric 0.67 tsp",
+         "is_error": false
+        },
+        {
+         "name": "lookup_product",
+         "input": {
+          "name": "raw tahini"
+         },
+         "result": "(offline) Raw Tahini — Har Bracha; per 100g: energy-kcal=650, proteins=24, fat=56, carbohydrates=9, sugars=0.5",
+         "is_error": false
+        }
+       ],
+       "context_user_messages": [
+        "אנחנו משפחה של 4, שומרים כשרות, ולא אוהבים פטריות. תזכור את זה.",
+        "תתכנן 3 ארוחות ערב לראשון עד שלישי, אחת מהן חלבית.",
+        "יש לי בבית 6 ביצים ושקית אורז.",
+        "תבנה את רשימת הקניות, ותבדוק פרטי מוצר של טחינה גולמית."
+       ],
+       "memory_loaded": false,
+       "model_calls": 3,
+       "stop_reason": "end_turn",
+       "usage": {
+        "input_tokens": 4,
+        "cache_read_input_tokens": 16168,
+        "cache_creation_input_tokens": 1039,
+        "output_tokens": 688,
+        "cost_usd": 0.025322,
+        "cumulative_cost_usd": 0.13040110000000002,
+        "calls": 3
+       },
+       "session_id": "28671814-218a-415e-a331-16a939f35266",
+       "is_error": false,
+       "n": 4,
+       "user": "תבנה את רשימת הקניות, ותבדוק פרטי מוצר של טחינה גולמית.",
+       "seconds": 9.82
+      }
+     ],
+     "state": {
+      "preferences": {
+       "household_size": 4,
+       "kashrut": "kosher",
+       "dislikes": [
+        "פטריות",
+        "mushrooms"
+       ]
+      },
+      "pantry": [
+       {
+        "name": "eggs",
+        "qty": 6.0,
+        "unit": "unit"
+       },
+       {
+        "name": "rice",
+        "qty": 1000.0,
+        "unit": "g"
+       }
+      ],
+      "meal_plan": {
+       "sunday": {
+        "dinner": [
+         "r02"
+        ]
+       },
+       "monday": {
+        "dinner": [
+         "r07"
+        ]
+       },
+       "tuesday": {
+        "dinner": [
+         "r04"
+        ]
+       }
+      },
+      "shopping_list": [
+       {
+        "name": "breadcrumbs",
+        "qty": 50.0,
+        "unit": "g"
+       },
+       {
+        "name": "chicken thighs",
+        "qty": 800.0,
+        "unit": "g"
+       },
+       {
+        "name": "cottage cheese",
+        "qty": 166.67,
+        "unit": "g"
+       },
+       {
+        "name": "crushed tomatoes",
+        "qty": 800.0,
+        "unit": "g"
+       },
+       {
+        "name": "feta cheese",
+        "qty": 133.33,
+        "unit": "g"
+       },
+       {
+        "name": "garlic",
+        "qty": 7.0,
+        "unit": "clove"
+       },
+       {
+        "name": "ground beef",
+        "qty": 500.0,
+        "unit": "g"
+       },
+       {
+        "name": "oil",
+        "qty": 40.0,
+        "unit": "ml"
+       },
+       {
+        "name": "onion",
+        "qty": 1.0,
+        "unit": "unit"
+       },
+       {
+        "name": "potatoes",
+        "qty": 666.67,
+        "unit": "g"
+       },
+       {
+        "name": "puff pastry",
+        "qty": 333.33,
+        "unit": "g"
+       },
+       {
+        "name": "salt",
+        "qty": 1.67,
+        "unit": "tsp"
+       },
+       {
+        "name": "sesame seeds",
+        "qty": 1.33,
+        "unit": "tbsp"
+       },
+       {
+        "name": "turmeric",
+        "qty": 0.67,
+        "unit": "tsp"
+       }
+      ]
+     }
+    },
+    {
+     "id": 2,
+     "turns": [
+      {
+       "text": "לפי מה ששמור אצלי, אתם לא אוהבים **פטריות** 🍄 (באנגלית mushrooms, כדי שהחיפוש יסנן אותן). זה המאכל היחיד ברשימה.\n\nרוצים להוסיף עוד משהו?",
+       "tool_calls": [
+        {
+         "name": "get_preferences",
+         "input": {},
+         "result": "{\"household_size\":4,\"kashrut\":\"kosher\",\"dislikes\":[\"פטריות\",\"mushrooms\"]}",
+         "is_error": false
+        }
+       ],
+       "context_user_messages": [
+        "אנחנו משפחה של 4, שומרים כשרות, ולא אוהבים פטריות. תזכור את זה.",
+        "תתכנן 3 ארוחות ערב לראשון עד שלישי, אחת מהן חלבית.",
+        "יש לי בבית 6 ביצים ושקית אורז.",
+        "תבנה את רשימת הקניות, ותבדוק פרטי מוצר של טחינה גולמית.",
+        "אילו מאכלים אני לא אוהב/ת?"
+       ],
+       "memory_loaded": false,
+       "model_calls": 2,
+       "stop_reason": "end_turn",
+       "usage": {
+        "input_tokens": 4,
+        "cache_read_input_tokens": 18285,
+        "cache_creation_input_tokens": 720,
+        "output_tokens": 136,
+        "cost_usd": 0.012153,
+        "cumulative_cost_usd": 0.14255410000000002,
+        "calls": 2
+       },
+       "session_id": "28671814-218a-415e-a331-16a939f35266",
+       "is_error": false,
+       "n": 5,
+       "user": "אילו מאכלים אני לא אוהב/ת?",
+       "seconds": 5.27
+      },
+      {
+       "text": "עדכנתי את ההעדפות: הפטריות ירדו מרשימת הלא-אוהבים ונכנסו לרשימת האהובים 🍄\n\n**ארוחת ערב ביום רביעי (חלבית):** פסטה ברוטב שמנת ופטריות. זו המנה היחידה בארוחה, כך שאין בה ערבוב של בשר וחלב.\nאפשרויות נוספות עם פטריות שמצאתי: תבשיל בקר ופטריות (בשרי), קיש פטריות (חלבי) ומרק פטריות ושעורה (פרווה). אם אחת מהן מתאימה יותר, אחליף.\n\n**רשימת הקניות המעודכנת ל-4 אנשים:**\n- ירכי עוף: 800 גרם\n- בשר בקר טחון: 500 גרם\n- תפוחי אדמה: כ-700 גרם\n- עגבניות מרוסקות: 800 גרם\n- פטריות: 400 גרם 🆕\n- פסטה: 500 גרם 🆕\n- שמנת מתוקה: 250 מ\"ל 🆕\n- חמאה: 30 גרם 🆕\n- פרמזן: 50 גרם 🆕\n- בצל: 1\n- שום: 10 שיניים (עלה מ-7)\n- בצק עלים: כ-350 גרם\n- גבינת קוטג׳: כ-170 גרם\n- גבינת פטה: כ-140 גרם\n- פירורי לחם: 50 גרם\n- שמן: 40 מ\"ל\n- שומשום: כ-1.5 כפות\n- כורכום: כ-¾ כפית\n- מלח: כ-3 כפיות\n\nבתיאבון! 😊",
+       "tool_calls": [
+        {
+         "name": "forget",
+         "input": {
+          "key": "dislikes",
+          "value": "פטריות"
+         },
+         "result": "Removed \"פטריות\" from dislikes.",
+         "is_error": false
+        },
+        {
+         "name": "forget",
+         "input": {
+          "key": "dislikes",
+          "value": "mushrooms"
+         },
+         "result": "Removed \"mushrooms\" from dislikes.",
+         "is_error": false
+        },
+        {
+         "name": "remember",
+         "input": {
+          "key": "likes",
+          "value": "פטריות"
+         },
+         "result": "Remembered likes = [\"פטריות\"]",
+         "is_error": false
+        },
+        {
+         "name": "remember",
+         "input": {
+          "key": "likes",
+          "value": "mushrooms"
+         },
+         "result": "Remembered likes = [\"פטריות\", \"mushrooms\"]",
+         "is_error": false
+        },
+        {
+         "name": "search_recipes",
+         "input": {
+          "query": "mushrooms",
+          "max_results": 10
+         },
+         "result": "r03 Beef and Mushroom Stew (meat)\nr08 Mushroom Quiche (dairy)\nr09 Pasta with Mushroom Cream Sauce (dairy)\nr20 Mushroom and Barley Soup (parve)",
+         "is_error": false
+        },
+        {
+         "name": "save_meal_plan",
+         "input": {
+          "day": "wednesday",
+          "meal": "dinner",
+          "recipe_id": "r09"
+         },
+         "result": "Saved r09 Pasta with Mushroom Cream Sauce to wednesday dinner. Slot now: r09",
+         "is_error": false
+        },
+        {
+         "name": "build_shopping_list",
+         "input": {
+          "servings": 4
+         },
+         "result": "Shopping list (19 items, 4 recipes, 4 servings each): breadcrumbs 50 g; butter 30 g; chicken thighs 800 g; cottage cheese 166.67 g; crushed tomatoes 800 g; feta cheese 133.33 g; garlic 10 clove; ground beef 500 g; mushrooms 400 g; oil 40 ml; onion 1 unit; parmesan 50 g; pasta 500 g; potatoes 666.67 g; puff pastry 333.33 g; salt 2.67 tsp; sesame seeds 1.33 tbsp; sweet cream 250 ml; turmeric 0.67 tsp",
+         "is_error": false
+        }
+       ],
+       "context_user_messages": [
+        "אנחנו משפחה של 4, שומרים כשרות, ולא אוהבים פטריות. תזכור את זה.",
+        "תתכנן 3 ארוחות ערב לראשון עד שלישי, אחת מהן חלבית.",
+        "יש לי בבית 6 ביצים ושקית אורז.",
+        "תבנה את רשימת הקניות, ותבדוק פרטי מוצר של טחינה גולמית.",
+        "אילו מאכלים אני לא אוהב/ת?",
+        "בעצם, עכשיו אנחנו כן אוהבים פטריות. תוסיף ארוחת ערב עם פטריות ביום רביעי."
+       ],
+       "memory_loaded": false,
+       "model_calls": 8,
+       "stop_reason": "end_turn",
+       "usage": {
+        "input_tokens": 8,
+        "cache_read_input_tokens": 40549,
+        "cache_creation_input_tokens": 1548,
+        "output_tokens": 1302,
+        "cost_usd": 0.046566,
+        "cumulative_cost_usd": 0.18911990000000004,
+        "calls": 8
+       },
+       "session_id": "28671814-218a-415e-a331-16a939f35266",
+       "is_error": false,
+       "n": 6,
+       "user": "בעצם, עכשיו אנחנו כן אוהבים פטריות. תוסיף ארוחת ערב עם פטריות ביום רביעי.",
+       "seconds": 19.03
+      },
+      {
+       "text": "לא עדכנתי את הרשימה עדיין, כי יש כאן בעיה: כרגע אין בתכנון אף ארוחה לשבת. התכנון כולל רק ארוחות ערב מראשון עד רביעי, ל-4 אנשים. אם אבנה עכשיו רשימה ל-8, כל הכמויות של ימי החול יוכפלו, ולזה לא התכוונתם.\n\nאת גודל המשפחה הקבוע השארתי 4, כי האורחים הם רק לשבת.\n\nאפשר לתכנן קודם את ארוחות השבת. מהמתכונים שיש לי, למשל:\n- **ארוחת ליל שבת (בשרית):** מרק עוף עם קניידלך, שניצל עוף וסלט ישראלי\n- **ארוחת צהריים בשבת (בשרית):** חמין, חומוס וסלט ישראלי\n\nעוד דבר שחשוב לדעת: הכלי שבונה את רשימת הקניות מחשב את כל המתכונים בתכנון לפי אותו מספר אנשים. לכן אי אפשר להכין רשימה אחת שבה ימי החול ל-4 והשבת ל-8. יש שתי דרכים:\n1. **לבנות את כל הרשימה ל-8.** ירכיבו יותר מדי לימי החול.\n2. **שתי רשימות נפרדות.** קודם לבנות רשימה ל-4 לימי החול. אחר כך להוריד את ימי החול מהתכנון ולבנות רשימה ל-8 לשבת בלבד, ואז להחזיר את ימי החול לתכנון. כל רשימה חדשה מחליפה את הקודמת בשמירה, אז את הרשימה של ימי החול אציג לכם כאן לפני כן.\n\nלאיזה תפריט שבת אתם מכוונים, ואיזו דרך מתאימה לכם?",
+       "tool_calls": [],
+       "context_user_messages": [
+        "אנחנו משפחה של 4, שומרים כשרות, ולא אוהבים פטריות. תזכור את זה.",
+        "תתכנן 3 ארוחות ערב לראשון עד שלישי, אחת מהן חלבית.",
+        "יש לי בבית 6 ביצים ושקית אורז.",
+        "תבנה את רשימת הקניות, ותבדוק פרטי מוצר של טחינה גולמית.",
+        "אילו מאכלים אני לא אוהב/ת?",
+        "בעצם, עכשיו אנחנו כן אוהבים פטריות. תוסיף ארוחת ערב עם פטריות ביום רביעי.",
+        "יש לנו אורחים לשבת, נהיה 8. תעדכן את רשימת הקניות."
+       ],
+       "memory_loaded": false,
+       "model_calls": 1,
+       "stop_reason": "end_turn",
+       "usage": {
+        "input_tokens": 2,
+        "cache_read_input_tokens": 11102,
+        "cache_creation_input_tokens": 665,
+        "output_tokens": 936,
+        "cost_usd": 0.026268,
+        "cumulative_cost_usd": 0.21538830000000003,
+        "calls": 1
+       },
+       "session_id": "28671814-218a-415e-a331-16a939f35266",
+       "is_error": false,
+       "n": 7,
+       "user": "יש לנו אורחים לשבת, נהיה 8. תעדכן את רשימת הקניות.",
+       "seconds": 12.45
+      }
+     ],
+     "state": {
+      "preferences": {
+       "household_size": 4,
+       "kashrut": "kosher",
+       "dislikes": [],
+       "likes": [
+        "פטריות",
+        "mushrooms"
+       ]
+      },
+      "pantry": [
+       {
+        "name": "eggs",
+        "qty": 6.0,
+        "unit": "unit"
+       },
+       {
+        "name": "rice",
+        "qty": 1000.0,
+        "unit": "g"
+       }
+      ],
+      "meal_plan": {
+       "sunday": {
+        "dinner": [
+         "r02"
+        ]
+       },
+       "monday": {
+        "dinner": [
+         "r07"
+        ]
+       },
+       "tuesday": {
+        "dinner": [
+         "r04"
+        ]
+       },
+       "wednesday": {
+        "dinner": [
+         "r09"
+        ]
+       }
+      },
+      "shopping_list": [
+       {
+        "name": "breadcrumbs",
+        "qty": 50.0,
+        "unit": "g"
+       },
+       {
+        "name": "butter",
+        "qty": 30.0,
+        "unit": "g"
+       },
+       {
+        "name": "chicken thighs",
+        "qty": 800.0,
+        "unit": "g"
+       },
+       {
+        "name": "cottage cheese",
+        "qty": 166.67,
+        "unit": "g"
+       },
+       {
+        "name": "crushed tomatoes",
+        "qty": 800.0,
+        "unit": "g"
+       },
+       {
+        "name": "feta cheese",
+        "qty": 133.33,
+        "unit": "g"
+       },
+       {
+        "name": "garlic",
+        "qty": 10.0,
+        "unit": "clove"
+       },
+       {
+        "name": "ground beef",
+        "qty": 500.0,
+        "unit": "g"
+       },
+       {
+        "name": "mushrooms",
+        "qty": 400.0,
+        "unit": "g"
+       },
+       {
+        "name": "oil",
+        "qty": 40.0,
+        "unit": "ml"
+       },
+       {
+        "name": "onion",
+        "qty": 1.0,
+        "unit": "unit"
+       },
+       {
+        "name": "parmesan",
+        "qty": 50.0,
+        "unit": "g"
+       },
+       {
+        "name": "pasta",
+        "qty": 500.0,
+        "unit": "g"
+       },
+       {
+        "name": "potatoes",
+        "qty": 666.67,
+        "unit": "g"
+       },
+       {
+        "name": "puff pastry",
+        "qty": 333.33,
+        "unit": "g"
+       },
+       {
+        "name": "salt",
+        "qty": 2.67,
+        "unit": "tsp"
+       },
+       {
+        "name": "sesame seeds",
+        "qty": 1.33,
+        "unit": "tbsp"
+       },
+       {
+        "name": "sweet cream",
+        "qty": 250.0,
+        "unit": "ml"
+       },
+       {
+        "name": "turmeric",
+        "qty": 0.67,
+        "unit": "tsp"
+       }
+      ]
+     }
+    }
+   ],
+   "turns": [
+    {
+     "session": 1,
+     "turn": 1,
+     "user": "אנחנו משפחה של 4, שומרים כשרות, ולא אוהבים פטריות. תזכור את זה.",
+     "answer": "שמרתי את הפרטים 😊\n- **גודל המשפחה:** 4\n- **כשרות:** שומרים כשרות, ולא אשלב בשר וחלב באותה ארוחה\n- **לא אוהבים:** פטריות. שמרתי את זה גם בעברית וגם באנגלית (mushrooms), כדי שמתכונים עם פטריות לא יופיעו בחיפוש.\n\nרוצים שנתכנן ארוחות לשבוע?",
+     "input_tokens": 6,
+     "cache_read_input_tokens": 10812,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 515,
+     "model_calls": 6,
+     "tools": [
+      "get_preferences",
+      "remember",
+      "remember",
+      "remember",
+      "remember"
+     ],
+     "cost_usd": 0.012713,
+     "seconds": 9.36
+    },
+    {
+     "session": 1,
+     "turn": 2,
+     "user": "תתכנן 3 ארוחות ערב לראשון עד שלישי, אחת מהן חלבית.",
+     "answer": "הארוחות לראשון עד שלישי נכנסו לתכנון, ובניתי רשימת קניות ל-4 אנשים. אף מנה לא כוללת פטריות 😊\n\n**ארוחות ערב:**\n- **ראשון (בשרי):** עוף בסופריטו עם תפוחי אדמה\n- **שני (חלבי):** בורקס גבינה\n- **שלישי (בשרי):** קציצות ברוטב עגבניות\n\nבכל ארוחה יש מנה אחת בלבד, כך שאין בשר וחלב באותה ארוחה.\n\n**רשימת קניות…",
+     "input_tokens": 12,
+     "cache_read_input_tokens": 28875,
+     "cache_creation_input_tokens": 2406,
+     "output_tokens": 1683,
+     "model_calls": 10,
+     "tools": [
+      "get_preferences",
+      "search_recipes",
+      "search_recipes",
+      "search_recipes",
+      "search_recipes",
+      "save_meal_plan",
+      "save_meal_plan",
+      "save_meal_plan",
+      "build_shopping_list"
+     ],
+     "cost_usd": 0.058731,
+     "seconds": 26.57
+    },
+    {
+     "session": 1,
+     "turn": 3,
+     "user": "יש לי בבית 6 ביצים ושקית אורז.",
+     "answer": "הוספתי למזווה 6 ביצים ושקית אורז ועדכנתי את רשימת הקניות 👍\n\n- **ביצים:** ירדו מהרשימה. התפריט צריך רק 3, אז יישארו לכם עוד.\n- **אורז:** הוא לא נדרש באף אחת משלוש הארוחות, אבל שמרתי אותו במזווה לתכנונים הבאים. רשמתי שקית של קילו כי זה הגודל הנפוץ. אם השקית בגודל אחר, ספרו לי ואתקן.\n\n**רשימת הקניות המ…",
+     "input_tokens": 6,
+     "cache_read_input_tokens": 20957,
+     "cache_creation_input_tokens": 1405,
+     "output_tokens": 909,
+     "model_calls": 4,
+     "tools": [
+      "update_pantry",
+      "update_pantry",
+      "build_shopping_list"
+     ],
+     "cost_usd": 0.033635,
+     "seconds": 13.33
+    },
+    {
+     "session": 1,
+     "turn": 4,
+     "user": "תבנה את רשימת הקניות, ותבדוק פרטי מוצר של טחינה גולמית.",
+     "answer": "בניתי שוב את רשימת הקניות ובדקתי את הטחינה 😊\n\n**רשימת קניות ל-4 אנשים** (לא השתנתה מהפעם הקודמת):\n- ירכי עוף: 800 גרם\n- בשר בקר טחון: 500 גרם\n- תפוחי אדמה: כ-700 גרם\n- עגבניות מרוסקות: 800 גרם\n- בצל: 1\n- שום: 7 שיניים\n- בצק עלים: כ-350 גרם\n- גבינת קוטג׳: כ-170 גרם\n- גבינת פטה: כ-140 גרם\n- פירורי לחם…",
+     "input_tokens": 4,
+     "cache_read_input_tokens": 16168,
+     "cache_creation_input_tokens": 1039,
+     "output_tokens": 688,
+     "model_calls": 3,
+     "tools": [
+      "build_shopping_list",
+      "lookup_product"
+     ],
+     "cost_usd": 0.025322,
+     "seconds": 9.82
+    },
+    {
+     "session": 2,
+     "turn": 5,
+     "user": "אילו מאכלים אני לא אוהב/ת?",
+     "answer": "לפי מה ששמור אצלי, אתם לא אוהבים **פטריות** 🍄 (באנגלית mushrooms, כדי שהחיפוש יסנן אותן). זה המאכל היחיד ברשימה.\n\nרוצים להוסיף עוד משהו?",
+     "input_tokens": 4,
+     "cache_read_input_tokens": 18285,
+     "cache_creation_input_tokens": 720,
+     "output_tokens": 136,
+     "model_calls": 2,
+     "tools": [
+      "get_preferences"
+     ],
+     "cost_usd": 0.012153,
+     "seconds": 5.27
+    },
+    {
+     "session": 2,
+     "turn": 6,
+     "user": "בעצם, עכשיו אנחנו כן אוהבים פטריות. תוסיף ארוחת ערב עם פטריות ביום רביעי.",
+     "answer": "עדכנתי את ההעדפות: הפטריות ירדו מרשימת הלא-אוהבים ונכנסו לרשימת האהובים 🍄\n\n**ארוחת ערב ביום רביעי (חלבית):** פסטה ברוטב שמנת ופטריות. זו המנה היחידה בארוחה, כך שאין בה ערבוב של בשר וחלב.\nאפשרויות נוספות עם פטריות שמצאתי: תבשיל בקר ופטריות (בשרי), קיש פטריות (חלבי) ומרק פטריות ושעורה (פרווה). אם אחת …",
+     "input_tokens": 8,
+     "cache_read_input_tokens": 40549,
+     "cache_creation_input_tokens": 1548,
+     "output_tokens": 1302,
+     "model_calls": 8,
+     "tools": [
+      "forget",
+      "forget",
+      "remember",
+      "remember",
+      "search_recipes",
+      "save_meal_plan",
+      "build_shopping_list"
+     ],
+     "cost_usd": 0.046566,
+     "seconds": 19.03
+    },
+    {
+     "session": 2,
+     "turn": 7,
+     "user": "יש לנו אורחים לשבת, נהיה 8. תעדכן את רשימת הקניות.",
+     "answer": "לא עדכנתי את הרשימה עדיין, כי יש כאן בעיה: כרגע אין בתכנון אף ארוחה לשבת. התכנון כולל רק ארוחות ערב מראשון עד רביעי, ל-4 אנשים. אם אבנה עכשיו רשימה ל-8, כל הכמויות של ימי החול יוכפלו, ולזה לא התכוונתם.\n\nאת גודל המשפחה הקבוע השארתי 4, כי האורחים הם רק לשבת.\n\nאפשר לתכנן קודם את ארוחות השבת. מהמתכונים …",
+     "input_tokens": 2,
+     "cache_read_input_tokens": 11102,
+     "cache_creation_input_tokens": 665,
+     "output_tokens": 936,
+     "model_calls": 1,
+     "tools": [],
+     "cost_usd": 0.026268,
+     "seconds": 12.45
+    }
+   ],
+   "totals": {
+    "input_tokens": 42,
+    "cache_read_input_tokens": 146748,
+    "cache_creation_input_tokens": 7783,
+    "output_tokens": 6169,
+    "model_calls": 34,
+    "tool_calls": 27,
+    "cost_usd": 0.215388,
+    "seconds": 95.83,
+    "cache_hit_pct": 94.9
+   },
+   "checks": [
+    {
+     "id": "household_size_s1",
+     "passed": true,
+     "detail": "household_size=4"
+    },
+    {
+     "id": "mushrooms_disliked_s1",
+     "passed": true,
+     "detail": "dislikes=['פטריות', 'mushrooms']"
+    },
+    {
+     "id": "one_dairy_dinner_s1",
+     "passed": true,
+     "detail": "dinners={'sunday': ['r02'], 'monday': ['r07'], 'tuesday': ['r04']}"
+    },
+    {
+     "id": "mushrooms_not_disliked_final",
+     "passed": true,
+     "detail": "dislikes=[]"
+    },
+    {
+     "id": "wednesday_mushroom_dinner",
+     "passed": true,
+     "detail": "wednesday dinner=['r09']"
+    },
+    {
+     "id": "no_meat_dairy_mix",
+     "passed": true,
+     "detail": "all slots ok"
+    },
+    {
+     "id": "shopping_no_duplicates",
+     "passed": true,
+     "detail": "non-empty=True"
+    },
+    {
+     "id": "eggs_reduced_by_pantry",
+     "passed": true,
+     "detail": "needed=2.33333 pantry=6 listed=0 expected=0"
+    },
+    {
+     "id": "servings_doubled",
+     "passed": false,
+     "detail": "compared=12 off=['breadcrumbs:50->50', 'chicken thighs:800->800', 'cottage cheese:166.67->166.67', 'crushed tomatoes:800->800', 'feta cheese:133.33->133.33', 'ground beef:500->500', 'oil:40->40', 'onion:1->1', 'potatoes:666.67->666.67', 'puff pastry:333.33->333.33', 'sesame seeds:1.33->1.33', 'turmeric:0.67->0.67']"
+    },
+    {
+     "id": "lookup_product_called",
+     "passed": true,
+     "detail": "lookup_product calls=1"
+    },
+    {
+     "id": "turn5_from_memory",
+     "passed": false,
+     "detail": "mentions=True memory=True context_clean=False"
+    }
+   ]
+  },
+  {
+   "variant": "SDK",
+   "started": "2026-10-20T23:23:51",
+   "scenario": {
+    "model": "claude-opus-5-5",
+    "effort": "medium",
+    "sessions": [
+     {
+      "id": 1,
+      "turns": [
+       {
+        "n": 1,
+        "user": "אנחנו משפחה של 4, שומרים כשרות, ולא אוהבים פטריות. תזכור את זה."
+       },
+       {
+        "n": 2,
+        "user": "תתכנן 3 ארוחות ערב לראשון עד שלישי, אחת מהן חלבית."
+       },
+       {
+        "n": 3,
+        "user": "יש לי בבית 6 ביצים ושקית אורז."
+       },
+       {
+        "n": 4,
+        "user": "תבנה את רשימת הקניות, ותבדוק פרטי מוצר של טחינה גולמית."
+       }
+      ]
+     },
+     {
+      "id": 2,
+      "turns": [
+       {
+        "n": 5,
+        "user": "אילו מאכלים אני לא אוהב/ת?"
+       },
+       {
+        "n": 6,
+        "user": "בעצם, עכשיו אנחנו כן אוהבים פטריות. תוסיף ארוחת ערב עם פטריות ביום רביעי."
+       },
+       {
+        "n": 7,
+        "user": "יש לנו אורחים לשבת, נהיה 8. תעדכן את רשימת הקניות."
+       }
+      ]
+     }
+    ],
+    "checks": [
+     {
+      "id": "household_size_s1",
+      "type": "state",
+      "description": "preferences.household_size == 4 after session 1"
+     },
+     {
+      "id": "mushrooms_disliked_s1",
+      "type": "state",
+      "description": "mushrooms are in dislikes after session 1"
+     },
+     {
+      "id": "one_dairy_dinner_s1",
+      "type": "state",
+      "description": "session 1 plans 3 dinners Sunday-Tuesday, exactly one of them dairy"
+     },
+     {
+      "id": "mushrooms_not_disliked_final",
+      "type": "state",
+      "description": "mushrooms/פטריות are NOT in dislikes at the end (contradiction handled)"
+     },
+     {
+      "id": "wednesday_mushroom_dinner",
+      "type": "state",
+      "description": "final plan has a Wednesday dinner containing mushrooms"
+     },
+     {
+      "id": "no_meat_dairy_mix",
+      "type": "state",
+      "description": "no day+meal in any snapshot mixes meat and dairy"
+     },
+     {
+      "id": "shopping_no_duplicates",
+      "type": "state",
+      "description": "no shopping list snapshot has a duplicate name+unit"
+     },
+     {
+      "id": "eggs_reduced_by_pantry",
+      "type": "state",
+      "description": "session-1 shopping list eggs = planned eggs - 6 in pantry"
+     },
+     {
+      "id": "servings_doubled",
+      "type": "state",
+      "description": "final shopping list ≈ 2x the session-1 list for items unaffected by session-2 changes (servings 8)"
+     },
+     {
+      "id": "lookup_product_called",
+      "type": "trace",
+      "description": "lookup_product was called at least once"
+     },
+     {
+      "id": "turn5_from_memory",
+      "type": "trace",
+      "description": "turn 5 answer mentions mushrooms, sourced from get_preferences/memory with no session-1 messages in the model context"
+     }
+    ]
+   },
+   "sessions": [
+    {
+     "id": 1,
+     "turns": [
+      {
+       "text": "שמרתי 😊\n- **גודל המשפחה:** 4 נפשות\n- **כשרות:** שומרים כשרות. לא אשלב בשר וחלב באותה ארוחה.\n- **לא אוהבים:** פטריות. שמרתי את זה גם בעברית וגם באנגלית (mushrooms), כדי שמתכונים עם פטריות לא יופיעו בחיפוש.\n\nרוצים שנתכנן ארוחות לשבוע?",
+       "tool_calls": [
+        {
+         "name": "get_preferences",
+         "input": {},
+         "result": "No preferences stored.",
+         "is_error": false
+        },
+        {
+         "name": "remember",
+         "input": {
+          "key": "household_size",
+          "value": 4
+         },
+         "result": "Remembered household_size = 4",
+         "is_error": false
+        },
+        {
+         "name": "remember",
+         "input": {
+          "key": "kashrut",
+          "value": "kosher"
+         },
+         "result": "Remembered kashrut = \"kosher\"",
+         "is_error": false
+        },
+        {
+         "name": "remember",
+         "input": {
+          "key": "dislikes",
+          "value": "פטריות"
+         },
+         "result": "Remembered dislikes = [\"פטריות\"]",
+         "is_error": false
+        },
+        {
+         "name": "remember",
+         "input": {
+          "key": "dislikes",
+          "value": "mushrooms"
+         },
+         "result": "Remembered dislikes = [\"פטריות\", \"mushrooms\"]",
+         "is_error": false
+        }
+       ],
+       "context_user_messages": [
+        "אנחנו משפחה של 4, שומרים כשרות, ולא אוהבים פטריות. תזכור את זה."
+       ],
+       "memory_loaded": false,
+       "model_calls": 6,
+       "stop_reason": "end_turn",
+       "usage": {
+        "input_tokens": 6,
+        "cache_read_input_tokens": 10812,
+        "cache_creation_input_tokens": 0,
+        "output_tokens": 514,
+        "cost_usd": 0.012695,
+        "cumulative_cost_usd": 0.0126946,
+        "calls": 6
+       },
+       "session_id": "e7b7ef08-59f6-4ad1-8b8e-6ae38adc4d57",
+       "is_error": false,
+       "n": 1,
+       "user": "אנחנו משפחה של 4, שומרים כשרות, ולא אוהבים פטריות. תזכור את זה.",
+       "seconds": 7.45
+      },
+      {
+       "text": "שמרתי בתוכנית שלוש ארוחות ערב ל-4 סועדים, בלי פטריות:\n\n| יום | ארוחת ערב | סוג |\n|---|---|---|\n| ראשון | שניצל עוף | בשרי 🍗 |\n| שני | בורקס גבינה | חלבי 🧀 |\n| שלישי | קציצות ברוטב עגבניות | בשרי 🍖 |\n\nשמתי את הארוחה החלבית באמצע. כך יש יום שלם בין הארוחות הבשריות לחלבית, והמעבר בין בשר לחלב קל יותר.\n\n**רשימת קניות** (כבר הורדתי ממנה את מה שיש במזווה):\n- חזה עוף: 600 גרם\n- בשר בקר טחון: 500 גרם\n- בצק עלים: כ-335 גרם\n- גבינת קוטג': כ-170 גרם\n- גבינה בולגרית (פטה): כ-135 גרם\n- עגבניות מרוסקות: 800 גרם\n- פירורי לחם: 200 גרם\n- קמח: 50 גרם\n- ביצים: 5 (המתכונים צריכים 4.33, אז עיגלתי למעלה)\n- שמן: 200 מ\"ל\n- בצל: 1\n- שום: 3 שיניים\n- מלח: 2 כפיות\n- שומשום: כ-1.5 כפות\n\nאם תרצו, אפשר להוסיף לכל ארוחה סלט ישראלי, ואז אעדכן את רשימת הקניות.",
+       "tool_calls": [
+        {
+         "name": "get_preferences",
+         "input": {},
+         "result": "{\"household_size\":4,\"kashrut\":\"kosher\",\"dislikes\":[\"פטריות\",\"mushrooms\"]}",
+         "is_error": false
+        },
+        {
+         "name": "search_recipes",
+         "input": {
+          "query": "",
+          "kind": "dairy",
+          "exclude_ingredients": [
+           "mushrooms",
+           "פטריות"
+          ]
+         },
+         "result": "r07 Cheese Bourekas (dairy)\nr10 Cheese Blintzes (dairy)",
+         "is_error": false
+        },
+        {
+         "name": "search_recipes",
+         "input": {
+          "query": "dinner",
+          "exclude_ingredients": [
+           "mushrooms",
+           "פטריות"
+          ],
+          "max_results": 10
+         },
+         "result": "No recipes found.",
+         "is_error": false
+        },
+        {
+         "name": "search_recipes",
+         "input": {
+          "query": "",
+          "exclude_ingredients": [
+           "mushrooms",
+           "פטריות"
+          ],
+          "max_results": 20
+         },
+         "result": "r01 Chicken Schnitzel (meat)\nr02 Sofrito Chicken with Potatoes (meat)\nr04 Meatballs in Tomato Sauce (meat)\nr05 Chicken Soup with Kneidlach (meat)\nr06 Cholent (meat)\nr07 Cheese Bourekas (dairy)\nr10 Cheese Blintzes (dairy)\nr11 Shakshuka (parve)\nr12 Israeli Salad (parve)\nr13 Hummus (parve)\nr14 Falafel (parve)\nr15 Majadra (parve)\nr16 Stuffed Peppers with Rice (parve)\nr17 Red Lentil Soup (parve)\nr18 Sabich (parve)\nr19 Roasted Cauliflower with Tahini (parve)",
+         "is_error": false
+        },
+        {
+         "name": "save_meal_plan",
+         "input": {
+          "day": "sunday",
+          "meal": "dinner",
+          "recipe_id": "r01"
+         },
+         "result": "Saved r01 Chicken Schnitzel to sunday dinner. Slot now: r01",
+         "is_error": false
+        },
+        {
+         "name": "save_meal_plan",
+         "input": {
+          "day": "monday",
+          "meal": "dinner",
+          "recipe_id": "r07"
+         },
+         "result": "Saved r07 Cheese Bourekas to monday dinner. Slot now: r07",
+         "is_error": false
+        },
+        {
+         "name": "save_meal_plan",
+         "input": {
+          "day": "tuesday",
+          "meal": "dinner",
+          "recipe_id": "r04"
+         },
+         "result": "Saved r04 Meatballs in Tomato Sauce to tuesday dinner. Slot now: r04",
+         "is_error": false
+        },
+        {
+         "name": "build_shopping_list",
+         "input": {
+          "servings": 4
+         },
+         "result": "Shopping list (14 items, 3 recipes, 4 servings each): breadcrumbs 200 g; chicken breast 600 g; cottage cheese 166.67 g; crushed tomatoes 800 g; eggs 4.33 unit; feta cheese 133.33 g; flour 50 g; garlic 3 clove; ground beef 500 g; oil 200 ml; onion 1 unit; puff pastry 333.33 g; salt 2 tsp; sesame seeds 1.33 tbsp",
+         "is_error": false
+        }
+       ],
+       "context_user_messages": [
+        "אנחנו משפחה של 4, שומרים כשרות, ולא אוהבים פטריות. תזכור את זה.",
+        "תתכנן 3 ארוחות ערב לראשון עד שלישי, אחת מהן חלבית."
+       ],
+       "memory_loaded": false,
+       "model_calls": 9,
+       "stop_reason": "end_turn",
+       "usage": {
+        "input_tokens": 10,
+        "cache_read_input_tokens": 24049,
+        "cache_creation_input_tokens": 2169,
+        "output_tokens": 1516,
+        "cost_usd": 0.052522,
+        "cumulative_cost_usd": 0.0652164,
+        "calls": 9
+       },
+       "session_id": "e7b7ef08-59f6-4ad1-8b8e-6ae38adc4d57",
+       "is_error": false,
+       "n": 2,
+       "user": "תתכנן 3 ארוחות ערב לראשון עד שלישי, אחת מהן חלבית.",
+       "seconds": 19.57
+      },
+      {
+       "text": "עדכנתי את המזווה 🥚\n- **ביצים:** 6. זה מספיק לכל המתכונים, אז הורדתי אותן מרשימת הקניות.\n- **אורז:** רשמתי שקית של קילו (1000 גרם), כי זה הגודל הנפוץ. אם השקית בגודל אחר, תגידו לי ואתקן. אף אחת משלוש הארוחות לא צריכה אורז, אז הוא לא משנה את הרשימה.\n\n**רשימת הקניות המעודכנת:**\n- חזה עוף: 600 גרם\n- בשר בקר טחון: 500 גרם\n- בצק עלים: כ-335 גרם\n- גבינת קוטג': כ-170 גרם\n- גבינה בולגרית (פטה): כ-135 גרם\n- עגבניות מרוסקות: 800 גרם\n- פירורי לחם: 200 גרם\n- קמח: 50 גרם\n- שמן: 200 מ\"ל\n- בצל: 1\n- שום: 3 שיניים\n- מלח: 2 כפיות\n- שומשום: כ-1.5 כפות\n\nאם תרצו להשתמש באורז, אפשר להחליף אחת הארוחות במג'דרה או בפלפלים ממולאים באורז. שתיהן פרווה.",
+       "tool_calls": [
+        {
+         "name": "update_pantry",
+         "input": {
+          "item": "eggs",
+          "qty": 6,
+          "unit": "unit"
+         },
+         "result": "Pantry: eggs = 6 unit. 1 items in pantry.",
+         "is_error": false
+        },
+        {
+         "name": "update_pantry",
+         "input": {
+          "item": "rice",
+          "qty": 1000,
+          "unit": "g"
+         },
+         "result": "Pantry: rice = 1000 g. 2 items in pantry.",
+         "is_error": false
+        },
+        {
+         "name": "build_shopping_list",
+         "input": {
+          "servings": 4
+         },
+         "result": "Shopping list (13 items, 3 recipes, 4 servings each): breadcrumbs 200 g; chicken breast 600 g; cottage cheese 166.67 g; crushed tomatoes 800 g; feta cheese 133.33 g; flour 50 g; garlic 3 clove; ground beef 500 g; oil 200 ml; onion 1 unit; puff pastry 333.33 g; salt 2 tsp; sesame seeds 1.33 tbsp",
+         "is_error": false
+        }
+       ],
+       "context_user_messages": [
+        "אנחנו משפחה של 4, שומרים כשרות, ולא אוהבים פטריות. תזכור את זה.",
+        "תתכנן 3 ארוחות ערב לראשון עד שלישי, אחת מהן חלבית.",
+        "יש לי בבית 6 ביצים ושקית אורז."
+       ],
+       "memory_loaded": false,
+       "model_calls": 4,
+       "stop_reason": "end_turn",
+       "usage": {
+        "input_tokens": 6,
+        "cache_read_input_tokens": 20120,
+        "cache_creation_input_tokens": 1280,
+        "output_tokens": 830,
+        "cost_usd": 0.030888,
+        "cumulative_cost_usd": 0.0961044,
+        "calls": 4
+       },
+       "session_id": "e7b7ef08-59f6-4ad1-8b8e-6ae38adc4d57",
+       "is_error": false,
+       "n": 3,
+       "user": "יש לי בבית 6 ביצים ושקית אורז.",
+       "seconds": 9.56
+      },
+      {
+       "text": "בניתי מחדש את רשימת הקניות ל-4 סועדים, והיא נשארה כמו בפעם הקודמת. הורדתי ממנה את הביצים שיש בבית:\n\n**רשימת קניות 🛒**\n- חזה עוף: 600 גרם\n- בשר בקר טחון: 500 גרם\n- בצק עלים: כ-335 גרם\n- גבינת קוטג': כ-170 גרם\n- גבינה בולגרית (פטה): כ-135 גרם\n- עגבניות מרוסקות: 800 גרם\n- פירורי לחם: 200 גרם\n- קמח: 50 גרם\n- שמן: 200 מ\"ל\n- בצל: 1\n- שום: 3 שיניים\n- מלח: 2 כפיות\n- שומשום: כ-1.5 כפות\n\n**טחינה גולמית: הר ברכה**\nערכים תזונתיים ל-100 גרם:\n- אנרגיה: 650 קק\"ל\n- חלבון: 24 גרם\n- שומן: 56 גרם\n- פחמימות: 9 גרם, מהן סוכרים 0.5 גרם\n\n⚠️ לא הצלחתי להתחבר ל-Open Food Facts, אז הנתונים האלה הם דוגמה מקומית. כדאי לבדוק אותם מול התווית על האריזה.\n\nהטחינה לא נמצאת ברשימה, כי אף אחת מהארוחות המתוכננות לא צריכה אותה. אם תרצו, אפשר להוסיף ארוחה עם טחינה, למשל כרובית צלויה בטחינה או חומוס.",
+       "tool_calls": [
+        {
+         "name": "get_preferences",
+         "input": {},
+         "result": "{\"household_size\":4,\"kashrut\":\"kosher\",\"dislikes\":[\"פטריות\",\"mushrooms\"]}",
+         "is_error": false
+        },
+        {
+         "name": "build_shopping_list",
+         "input": {
+          "servings": 4
+         },
+         "result": "Shopping list (13 items, 3 recipes, 4 servings each): breadcrumbs 200 g; chicken breast 600 g; cottage cheese 166.67 g; crushed tomatoes 800 g; feta cheese 133.33 g; flour 50 g; garlic 3 clove; ground beef 500 g; oil 200 ml; onion 1 unit; puff pastry 333.33 g; salt 2 tsp; sesame seeds 1.33 tbsp",
+         "is_error": false
+        },
+        {
+         "name": "lookup_product",
+         "input": {
+          "name": "tahini"
+         },
+         "result": "(offline) Raw Tahini — Har Bracha; per 100g: energy-kcal=650, proteins=24, fat=56, carbohydrates=9, sugars=0.5",
+         "is_error": false
+        }
+       ],
+       "context_user_messages": [
+        "אנחנו משפחה של 4, שומרים כשרות, ולא אוהבים פטריות. תזכור את זה.",
+        "תתכנן 3 ארוחות ערב לראשון עד שלישי, אחת מהן חלבית.",
+        "יש לי בבית 6 ביצים ושקית אורז.",
+        "תבנה את רשימת הקניות, ותבדוק פרטי מוצר של טחינה גולמית."
+       ],
+       "memory_loaded": false,
+       "model_calls": 4,
+       "stop_reason": "end_turn",
+       "usage": {
+        "input_tokens": 4,
+        "cache_read_input_tokens": 15449,
+        "cache_creation_input_tokens": 1128,
+        "output_tokens": 722,
+        "cost_usd": 0.02657,
+        "cumulative_cost_usd": 0.12267420000000001,
+        "calls": 4
+       },
+       "session_id": "e7b7ef08-59f6-4ad1-8b8e-6ae38adc4d57",
+       "is_error": false,
+       "n": 4,
+       "user": "תבנה את רשימת הקניות, ותבדוק פרטי מוצר של טחינה גולמית.",
+       "seconds": 9.13
+      }
+     ],
+     "state": {
+      "preferences": {
+       "household_size": 4,
+       "kashrut": "kosher",
+       "dislikes": [
+        "פטריות",
+        "mushrooms"
+       ]
+      },
+      "pantry": [
+       {
+        "name": "eggs",
+        "qty": 6.0,
+        "unit": "unit"
+       },
+       {
+        "name": "rice",
+        "qty": 1000.0,
+        "unit": "g"
+       }
+      ],
+      "meal_plan": {
+       "sunday": {
+        "dinner": [
+         "r01"
+        ]
+       },
+       "monday": {
+        "dinner": [
+         "r07"
+        ]
+       },
+       "tuesday": {
+        "dinner": [
+         "r04"
+        ]
+       }
+      },
+      "shopping_list": [
+       {
+        "name": "breadcrumbs",
+        "qty": 200.0,
+        "unit": "g"
+       },
+       {
+        "name": "chicken breast",
+        "qty": 600.0,
+        "unit": "g"
+       },
+       {
+        "name": "cottage cheese",
+        "qty": 166.67,
+        "unit": "g"
+       },
+       {
+        "name": "crushed tomatoes",
+        "qty": 800.0,
+        "unit": "g"
+       },
+       {
+        "name": "feta cheese",
+        "qty": 133.33,
+        "unit": "g"
+       },
+       {
+        "name": "flour",
+        "qty": 50.0,
+        "unit": "g"
+       },
+       {
+        "name": "garlic",
+        "qty": 3.0,
+        "unit": "clove"
+       },
+       {
+        "name": "ground beef",
+        "qty": 500.0,
+        "unit": "g"
+       },
+       {
+        "name": "oil",
+        "qty": 200.0,
+        "unit": "ml"
+       },
+       {
+        "name": "onion",
+        "qty": 1.0,
+        "unit": "unit"
+       },
+       {
+        "name": "puff pastry",
+        "qty": 333.33,
+        "unit": "g"
+       },
+       {
+        "name": "salt",
+        "qty": 2.0,
+        "unit": "tsp"
+       },
+       {
+        "name": "sesame seeds",
+        "qty": 1.33,
+        "unit": "tbsp"
+       }
+      ]
+     }
+    },
+    {
+     "id": 2,
+     "turns": [
+      {
+       "text": "לפי מה שיש לי בזיכרון, אתם לא אוהבים **פטריות** 🍄. שמרתי את זה גם באנגלית (mushrooms), כדי שמתכונים עם פטריות לא יופיעו בחיפוש.\n\nאין לי עוד מאכלים שאתם לא אוהבים, ולא שמורות אצלי אלרגיות. אם יש עוד משהו, תגידו לי ואוסיף.",
+       "tool_calls": [
+        {
+         "name": "get_preferences",
+         "input": {},
+         "result": "{\"household_size\":4,\"kashrut\":\"kosher\",\"dislikes\":[\"פטריות\",\"mushrooms\"]}",
+         "is_error": false
+        }
+       ],
+       "context_user_messages": [
+        "אנחנו משפחה של 4, שומרים כשרות, ולא אוהבים פטריות. תזכור את זה.",
+        "תתכנן 3 ארוחות ערב לראשון עד שלישי, אחת מהן חלבית.",
+        "יש לי בבית 6 ביצים ושקית אורז.",
+        "תבנה את רשימת הקניות, ותבדוק פרטי מוצר של טחינה גולמית.",
+        "אילו מאכלים אני לא אוהב/ת?"
+       ],
+       "memory_loaded": false,
+       "model_calls": 2,
+       "stop_reason": "end_turn",
+       "usage": {
+        "input_tokens": 4,
+        "cache_read_input_tokens": 17742,
+        "cache_creation_input_tokens": 723,
+        "output_tokens": 194,
+        "cost_usd": 0.013228,
+        "cumulative_cost_usd": 0.1359026,
+        "calls": 2
+       },
+       "session_id": "e7b7ef08-59f6-4ad1-8b8e-6ae38adc4d57",
+       "is_error": false,
+       "n": 5,
+       "user": "אילו מאכלים אני לא אוהב/ת?",
+       "seconds": 4.25
+      },
+      {
+       "text": "עדכנתי. פטריות כבר לא ברשימת המאכלים שאתם לא אוהבים, ועכשיו הן שמורות אצלי כמאכל שאתם אוהבים 🍄 (בעברית וגם באנגלית).\n\n**התוכנית המעודכנת לארוחות ערב:**\n\n| יום | ארוחת ערב | סוג |\n|---|---|---|\n| ראשון | שניצל עוף | בשרי |\n| שני | בורקס גבינה | חלבי |\n| שלישי | קציצות ברוטב עגבניות | בשרי |\n| רביעי | **קיש פטריות** | חלבי |\n\nאם תעדיפו מתכון אחר עם פטריות, יש גם תבשיל בקר ופטריות (בשרי), פסטה ברוטב שמנת ופטריות (חלבי), או מרק פטריות ושעורה (פרווה).\n\n**רשימת הקניות המעודכנת** 🛒 (עיגלתי כמויות למעלה):\n- חזה עוף: 600 גרם\n- בשר בקר טחון: 500 גרם\n- בצק עלים: כ-335 גרם\n- בצק פאי: 1. המתכון לשישה, אז ל-4 צריך רק כשני שלישים ממנו.\n- פטריות: 200 גרם\n- גבינת קוטג': כ-170 גרם\n- גבינה בולגרית (פטה): כ-135 גרם\n- גבינה צהובה: 100 גרם\n- שמנת חמוצה: כ-135 מ\"ל\n- ביצים: 1. הקיש צריך עוד ביצים, ו-6 הביצים שבבית כבר לא מספיקות לכל הארוחות.\n- עגבניות מרוסקות: 800 גרם\n- פירורי לחם: 200 גרם\n- קמח: 50 גרם\n- שמן: 200 מ\"ל\n- בצל: 2\n- שום: 3 שיניים\n- מלח: 3 כפיות\n- שומשום: כ-1.5 כפות",
+       "tool_calls": [
+        {
+         "name": "forget",
+         "input": {
+          "key": "dislikes",
+          "value": "פטריות"
+         },
+         "result": "Removed \"פטריות\" from dislikes.",
+         "is_error": false
+        },
+        {
+         "name": "forget",
+         "input": {
+          "key": "dislikes",
+          "value": "mushrooms"
+         },
+         "result": "Removed \"mushrooms\" from dislikes.",
+         "is_error": false
+        },
+        {
+         "name": "remember",
+         "input": {
+          "key": "likes",
+          "value": "פטריות"
+         },
+         "result": "Remembered likes = [\"פטריות\"]",
+         "is_error": false
+        },
+        {
+         "name": "remember",
+         "input": {
+          "key": "likes",
+          "value": "mushrooms"
+         },
+         "result": "Remembered likes = [\"פטריות\", \"mushrooms\"]",
+         "is_error": false
+        },
+        {
+         "name": "search_recipes",
+         "input": {
+          "query": "mushrooms",
+          "max_results": 10
+         },
+         "result": "r03 Beef and Mushroom Stew (meat)\nr08 Mushroom Quiche (dairy)\nr09 Pasta with Mushroom Cream Sauce (dairy)\nr20 Mushroom and Barley Soup (parve)",
+         "is_error": false
+        },
+        {
+         "name": "save_meal_plan",
+         "input": {
+          "day": "wednesday",
+          "meal": "dinner",
+          "recipe_id": "r08"
+         },
+         "result": "Saved r08 Mushroom Quiche to wednesday dinner. Slot now: r08",
+         "is_error": false
+        },
+        {
+         "name": "get_recipe",
+         "input": {
+          "recipe_id": "r08"
+         },
+         "result": "r08 Mushroom Quiche (dairy, serves 6): pie crust 1 unit; mushrooms 300 g; onion 1 unit; eggs 4 unit; sour cream 200 ml; yellow cheese 150 g; salt 1 tsp",
+         "is_error": false
+        },
+        {
+         "name": "build_shopping_list",
+         "input": {
+          "servings": 4
+         },
+         "result": "Shopping list (18 items, 4 recipes, 4 servings each): breadcrumbs 200 g; chicken breast 600 g; cottage cheese 166.67 g; crushed tomatoes 800 g; eggs 1 unit; feta cheese 133.33 g; flour 50 g; garlic 3 clove; ground beef 500 g; mushrooms 200 g; oil 200 ml; onion 1.67 unit; pie crust 0.67 unit; puff pastry 333.33 g; salt 2.67 tsp; sesame seeds 1.33 tbsp; sour cream 133.33 ml; yellow cheese 100 g",
+         "is_error": false
+        }
+       ],
+       "context_user_messages": [
+        "אנחנו משפחה של 4, שומרים כשרות, ולא אוהבים פטריות. תזכור את זה.",
+        "תתכנן 3 ארוחות ערב לראשון עד שלישי, אחת מהן חלבית.",
+        "יש לי בבית 6 ביצים ושקית אורז.",
+        "תבנה את רשימת הקניות, ותבדוק פרטי מוצר של טחינה גולמית.",
+        "אילו מאכלים אני לא אוהב/ת?",
+        "בעצם, עכשיו אנחנו כן אוהבים פטריות. תוסיף ארוחת ערב עם פטריות ביום רביעי."
+       ],
+       "memory_loaded": false,
+       "model_calls": 10,
+       "stop_reason": "end_turn",
+       "usage": {
+        "input_tokens": 10,
+        "cache_read_input_tokens": 50662,
+        "cache_creation_input_tokens": 2087,
+        "output_tokens": 1515,
+        "cost_usd": 0.057168,
+        "cumulative_cost_usd": 0.193071,
+        "calls": 10
+       },
+       "session_id": "e7b7ef08-59f6-4ad1-8b8e-6ae38adc4d57",
+       "is_error": false,
+       "n": 6,
+       "user": "בעצם, עכשיו אנחנו כן אוהבים פטריות. תוסיף ארוחת ערב עם פטריות ביום רביעי.",
+       "seconds": 23.36
+      },
+      {
+       "text": "שמחה בשבילכם, שבת עם אורחים 🕯️\n\nלפני שאעדכן את הרשימה, צריך לסגור שני דברים:\n\n1. **עדיין אין ארוחות לשבת בתוכנית.** כרגע מתוכננות רק ארוחות ערב מראשון עד רביעי, והן לכם, 4 סועדים. אם אבנה את הרשימה ל-8, כל הכמויות של ימי החול יוכפלו בלי צורך.\n2. **רשימת הקניות בונה את כל הארוחות לאותו מספר סועדים.** לכן אבנה אותה ל-4 בשביל ימי החול, ואת הכמויות של שבת אחשב בנפרד ל-8 לפי המתכונים. גודל המשפחה יישאר שמור אצלי כ-4, כי האורחים הם רק לשבת.\n\n**הצעה לשבת, הכול בשרי:**\n- **ליל שבת (שישי בערב):** מרק עוף עם קניידלך, עוף בסופריטו עם תפוחי אדמה וסלט ישראלי\n- **ארוחת צהריים בשבת:** חמין, חומוס וסלט ישראלי\n\nמתאים לכם? אפשר גם להחליף מנות. כשתאשרו, אוסיף את הארוחות לתוכנית ואכין רשימת קניות מלאה.",
+       "tool_calls": [],
+       "context_user_messages": [
+        "אנחנו משפחה של 4, שומרים כשרות, ולא אוהבים פטריות. תזכור את זה.",
+        "תתכנן 3 ארוחות ערב לראשון עד שלישי, אחת מהן חלבית.",
+        "יש לי בבית 6 ביצים ושקית אורז.",
+        "תבנה את רשימת הקניות, ותבדוק פרטי מוצר של טחינה גולמית.",
+        "אילו מאכלים אני לא אוהב/ת?",
+        "בעצם, עכשיו אנחנו כן אוהבים פטריות. תוסיף ארוחת ערב עם פטריות ביום רביעי.",
+        "יש לנו אורחים לשבת, נהיה 8. תעדכן את רשימת הקניות."
+       ],
+       "memory_loaded": false,
+       "model_calls": 1,
+       "stop_reason": "end_turn",
+       "usage": {
+        "input_tokens": 2,
+        "cache_read_input_tokens": 11125,
+        "cache_creation_input_tokens": 832,
+        "output_tokens": 815,
+        "cost_usd": 0.025189,
+        "cumulative_cost_usd": 0.21825999999999998,
+        "calls": 1
+       },
+       "session_id": "e7b7ef08-59f6-4ad1-8b8e-6ae38adc4d57",
+       "is_error": false,
+       "n": 7,
+       "user": "יש לנו אורחים לשבת, נהיה 8. תעדכן את רשימת הקניות.",
+       "seconds": 10.36
+      }
+     ],
+     "state": {
+      "preferences": {
+       "household_size": 4,
+       "kashrut": "kosher",
+       "dislikes": [],
+       "likes": [
+        "פטריות",
+        "mushrooms"
+       ]
+      },
+      "pantry": [
+       {
+        "name": "eggs",
+        "qty": 6.0,
+        "unit": "unit"
+       },
+       {
+        "name": "rice",
+        "qty": 1000.0,
+        "unit": "g"
+       }
+      ],
+      "meal_plan": {
+       "sunday": {
+        "dinner": [
+         "r01"
+        ]
+       },
+       "monday": {
+        "dinner": [
+         "r07"
+        ]
+       },
+       "tuesday": {
+        "dinner": [
+         "r04"
+        ]
+       },
+       "wednesday": {
+        "dinner": [
+         "r08"
+        ]
+       }
+      },
+      "shopping_list": [
+       {
+        "name": "breadcrumbs",
+        "qty": 200.0,
+        "unit": "g"
+       },
+       {
+        "name": "chicken breast",
+        "qty": 600.0,
+        "unit": "g"
+       },
+       {
+        "name": "cottage cheese",
+        "qty": 166.67,
+        "unit": "g"
+       },
+       {
+        "name": "crushed tomatoes",
+        "qty": 800.0,
+        "unit": "g"
+       },
+       {
+        "name": "eggs",
+        "qty": 1.0,
+        "unit": "unit"
+       },
+       {
+        "name": "feta cheese",
+        "qty": 133.33,
+        "unit": "g"
+       },
+       {
+        "name": "flour",
+        "qty": 50.0,
+        "unit": "g"
+       },
+       {
+        "name": "garlic",
+        "qty": 3.0,
+        "unit": "clove"
+       },
+       {
+        "name": "ground beef",
+        "qty": 500.0,
+        "unit": "g"
+       },
+       {
+        "name": "mushrooms",
+        "qty": 200.0,
+        "unit": "g"
+       },
+       {
+        "name": "oil",
+        "qty": 200.0,
+        "unit": "ml"
+       },
+       {
+        "name": "onion",
+        "qty": 1.67,
+        "unit": "unit"
+       },
+       {
+        "name": "pie crust",
+        "qty": 0.67,
+        "unit": "unit"
+       },
+       {
+        "name": "puff pastry",
+        "qty": 333.33,
+        "unit": "g"
+       },
+       {
+        "name": "salt",
+        "qty": 2.67,
+        "unit": "tsp"
+       },
+       {
+        "name": "sesame seeds",
+        "qty": 1.33,
+        "unit": "tbsp"
+       },
+       {
+        "name": "sour cream",
+        "qty": 133.33,
+        "unit": "ml"
+       },
+       {
+        "name": "yellow cheese",
+        "qty": 100.0,
+        "unit": "g"
+       }
+      ]
+     }
+    }
+   ],
+   "turns": [
+    {
+     "session": 1,
+     "turn": 1,
+     "user": "אנחנו משפחה של 4, שומרים כשרות, ולא אוהבים פטריות. תזכור את זה.",
+     "answer": "שמרתי 😊\n- **גודל המשפחה:** 4 נפשות\n- **כשרות:** שומרים כשרות. לא אשלב בשר וחלב באותה ארוחה.\n- **לא אוהבים:** פטריות. שמרתי את זה גם בעברית וגם באנגלית (mushrooms), כדי שמתכונים עם פטריות לא יופיעו בחיפוש.\n\nרוצים שנתכנן ארוחות לשבוע?",
+     "input_tokens": 6,
+     "cache_read_input_tokens": 10812,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 514,
+     "model_calls": 6,
+     "tools": [
+      "get_preferences",
+      "remember",
+      "remember",
+      "remember",
+      "remember"
+     ],
+     "cost_usd": 0.012695,
+     "seconds": 7.45
+    },
+    {
+     "session": 1,
+     "turn": 2,
+     "user": "תתכנן 3 ארוחות ערב לראשון עד שלישי, אחת מהן חלבית.",
+     "answer": "שמרתי בתוכנית שלוש ארוחות ערב ל-4 סועדים, בלי פטריות:\n\n| יום | ארוחת ערב | סוג |\n|---|---|---|\n| ראשון | שניצל עוף | בשרי 🍗 |\n| שני | בורקס גבינה | חלבי 🧀 |\n| שלישי | קציצות ברוטב עגבניות | בשרי 🍖 |\n\nשמתי את הארוחה החלבית באמצע. כך יש יום שלם בין הארוחות הבשריות לחלבית, והמעבר בין בשר לחלב קל יותר.\n…",
+     "input_tokens": 10,
+     "cache_read_input_tokens": 24049,
+     "cache_creation_input_tokens": 2169,
+     "output_tokens": 1516,
+     "model_calls": 9,
+     "tools": [
+      "get_preferences",
+      "search_recipes",
+      "search_recipes",
+      "search_recipes",
+      "save_meal_plan",
+      "save_meal_plan",
+      "save_meal_plan",
+      "build_shopping_list"
+     ],
+     "cost_usd": 0.052522,
+     "seconds": 19.57
+    },
+    {
+     "session": 1,
+     "turn": 3,
+     "user": "יש לי בבית 6 ביצים ושקית אורז.",
+     "answer": "עדכנתי את המזווה 🥚\n- **ביצים:** 6. זה מספיק לכל המתכונים, אז הורדתי אותן מרשימת הקניות.\n- **אורז:** רשמתי שקית של קילו (1000 גרם), כי זה הגודל הנפוץ. אם השקית בגודל אחר, תגידו לי ואתקן. אף אחת משלוש הארוחות לא צריכה אורז, אז הוא לא משנה את הרשימה.\n\n**רשימת הקניות המעודכנת:**\n- חזה עוף: 600 גרם\n- בשר…",
+     "input_tokens": 6,
+     "cache_read_input_tokens": 20120,
+     "cache_creation_input_tokens": 1280,
+     "output_tokens": 830,
+     "model_calls": 4,
+     "tools": [
+      "update_pantry",
+      "update_pantry",
+      "build_shopping_list"
+     ],
+     "cost_usd": 0.030888,
+     "seconds": 9.56
+    },
+    {
+     "session": 1,
+     "turn": 4,
+     "user": "תבנה את רשימת הקניות, ותבדוק פרטי מוצר של טחינה גולמית.",
+     "answer": "בניתי מחדש את רשימת הקניות ל-4 סועדים, והיא נשארה כמו בפעם הקודמת. הורדתי ממנה את הביצים שיש בבית:\n\n**רשימת קניות 🛒**\n- חזה עוף: 600 גרם\n- בשר בקר טחון: 500 גרם\n- בצק עלים: כ-335 גרם\n- גבינת קוטג': כ-170 גרם\n- גבינה בולגרית (פטה): כ-135 גרם\n- עגבניות מרוסקות: 800 גרם\n- פירורי לחם: 200 גרם\n- קמח: 50 …",
+     "input_tokens": 4,
+     "cache_read_input_tokens": 15449,
+     "cache_creation_input_tokens": 1128,
+     "output_tokens": 722,
+     "model_calls": 4,
+     "tools": [
+      "get_preferences",
+      "build_shopping_list",
+      "lookup_product"
+     ],
+     "cost_usd": 0.02657,
+     "seconds": 9.13
+    },
+    {
+     "session": 2,
+     "turn": 5,
+     "user": "אילו מאכלים אני לא אוהב/ת?",
+     "answer": "לפי מה שיש לי בזיכרון, אתם לא אוהבים **פטריות** 🍄. שמרתי את זה גם באנגלית (mushrooms), כדי שמתכונים עם פטריות לא יופיעו בחיפוש.\n\nאין לי עוד מאכלים שאתם לא אוהבים, ולא שמורות אצלי אלרגיות. אם יש עוד משהו, תגידו לי ואוסיף.",
+     "input_tokens": 4,
+     "cache_read_input_tokens": 17742,
+     "cache_creation_input_tokens": 723,
+     "output_tokens": 194,
+     "model_calls": 2,
+     "tools": [
+      "get_preferences"
+     ],
+     "cost_usd": 0.013228,
+     "seconds": 4.25
+    },
+    {
+     "session": 2,
+     "turn": 6,
+     "user": "בעצם, עכשיו אנחנו כן אוהבים פטריות. תוסיף ארוחת ערב עם פטריות ביום רביעי.",
+     "answer": "עדכנתי. פטריות כבר לא ברשימת המאכלים שאתם לא אוהבים, ועכשיו הן שמורות אצלי כמאכל שאתם אוהבים 🍄 (בעברית וגם באנגלית).\n\n**התוכנית המעודכנת לארוחות ערב:**\n\n| יום | ארוחת ערב | סוג |\n|---|---|---|\n| ראשון | שניצל עוף | בשרי |\n| שני | בורקס גבינה | חלבי |\n| שלישי | קציצות ברוטב עגבניות | בשרי |\n| רביעי |…",
+     "input_tokens": 10,
+     "cache_read_input_tokens": 50662,
+     "cache_creation_input_tokens": 2087,
+     "output_tokens": 1515,
+     "model_calls": 10,
+     "tools": [
+      "forget",
+      "forget",
+      "remember",
+      "remember",
+      "search_recipes",
+      "save_meal_plan",
+      "get_recipe",
+      "build_shopping_list"
+     ],
+     "cost_usd": 0.057168,
+     "seconds": 23.36
+    },
+    {
+     "session": 2,
+     "turn": 7,
+     "user": "יש לנו אורחים לשבת, נהיה 8. תעדכן את רשימת הקניות.",
+     "answer": "שמחה בשבילכם, שבת עם אורחים 🕯️\n\nלפני שאעדכן את הרשימה, צריך לסגור שני דברים:\n\n1. **עדיין אין ארוחות לשבת בתוכנית.** כרגע מתוכננות רק ארוחות ערב מראשון עד רביעי, והן לכם, 4 סועדים. אם אבנה את הרשימה ל-8, כל הכמויות של ימי החול יוכפלו בלי צורך.\n2. **רשימת הקניות בונה את כל הארוחות לאותו מספר סועדים.**…",
+     "input_tokens": 2,
+     "cache_read_input_tokens": 11125,
+     "cache_creation_input_tokens": 832,
+     "output_tokens": 815,
+     "model_calls": 1,
+     "tools": [],
+     "cost_usd": 0.025189,
+     "seconds": 10.36
+    }
+   ],
+   "totals": {
+    "input_tokens": 42,
+    "cache_read_input_tokens": 149959,
+    "cache_creation_input_tokens": 8219,
+    "output_tokens": 6106,
+    "model_calls": 36,
+    "tool_calls": 28,
+    "cost_usd": 0.21826,
+    "seconds": 83.68,
+    "cache_hit_pct": 94.8
+   },
+   "checks": [
+    {
+     "id": "household_size_s1",
+     "passed": true,
+     "detail": "household_size=4"
+    },
+    {
+     "id": "mushrooms_disliked_s1",
+     "passed": true,
+     "detail": "dislikes=['פטריות', 'mushrooms']"
+    },
+    {
+     "id": "one_dairy_dinner_s1",
+     "passed": true,
+     "detail": "dinners={'sunday': ['r01'], 'monday': ['r07'], 'tuesday': ['r04']}"
+    },
+    {
+     "id": "mushrooms_not_disliked_final",
+     "passed": true,
+     "detail": "dislikes=[]"
+    },
+    {
+     "id": "wednesday_mushroom_dinner",
+     "passed": true,
+     "detail": "wednesday dinner=['r08']"
+    },
+    {
+     "id": "no_meat_dairy_mix",
+     "passed": true,
+     "detail": "all slots ok"
+    },
+    {
+     "id": "shopping_no_duplicates",
+     "passed": true,
+     "detail": "non-empty=True"
+    },
+    {
+     "id": "eggs_reduced_by_pantry",
+     "passed": true,
+     "detail": "needed=4.33333 pantry=6 listed=0 expected=0"
+    },
+    {
+     "id": "servings_doubled",
+     "passed": false,
+     "detail": "compared=11 off=['breadcrumbs:200->200', 'chicken breast:600->600', 'cottage cheese:166.67->166.67', 'crushed tomatoes:800->800', 'feta cheese:133.33->133.33', 'flour:50->50', 'garlic:3->3', 'ground beef:500->500', 'oil:200->200', 'puff pastry:333.33->333.33', 'sesame seeds:1.33->1.33']"
+    },
+    {
+     "id": "lookup_product_called",
+     "passed": true,
+     "detail": "lookup_product calls=1"
+    },
+    {
+     "id": "turn5_from_memory",
+     "passed": false,
+     "detail": "mentions=True memory=True context_clean=False"
+    }
+   ]
+  }
+ ]
+}

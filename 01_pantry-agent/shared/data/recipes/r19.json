@@ -1,0 +1,44 @@
+{
+  "id": "r19",
+  "name": "Roasted Cauliflower with Tahini",
+  "tags": [
+    "vegetables",
+    "vegan",
+    "baked",
+    "side"
+  ],
+  "kind": "parve",
+  "servings": 4,
+  "ingredients": [
+    {
+      "name": "cauliflower",
+      "qty": 1,
+      "unit": "unit"
+    },
+    {
+      "name": "tahini",
+      "qty": 80,
+      "unit": "g"
+    },
+    {
+      "name": "lemon",
+      "qty": 1,
+      "unit": "unit"
+    },
+    {
+      "name": "olive oil",
+      "qty": 30,
+      "unit": "ml"
+    },
+    {
+      "name": "parsley",
+      "qty": 1,
+      "unit": "bunch"
+    },
+    {
+      "name": "salt",
+      "qty": 1,
+      "unit": "tsp"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "r17",
+  "name": "Red Lentil Soup",
+  "tags": [
+    "soup",
+    "vegan",
+    "winter",
+    "budget"
+  ],
+  "kind": "parve",
+  "servings": 6,
+  "ingredients": [
+    {
+      "name": "red lentils",
+      "qty": 400,
+      "unit": "g"
+    },
+    {
+      "name": "carrots",
+      "qty": 2,
+      "unit": "unit"
+    },
+    {
+      "name": "onion",
+      "qty": 1,
+      "unit": "unit"
+    },
+    {
+      "name": "cumin",
+      "qty": 1,
+      "unit": "tsp"
+    },
+    {
+      "name": "lemon",
+      "qty": 1,
+      "unit": "unit"
+    },
+    {
+      "name": "oil",
+      "qty": 30,
+      "unit": "ml"
+    },
+    {
+      "name": "salt",
+      "qty": 1,
+      "unit": "tsp"
+    }
+  ]
+}

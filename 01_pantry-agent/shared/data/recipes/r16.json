@@ -1,0 +1,48 @@
+{
+  "id": "r16",
+  "name": "Stuffed Peppers with Rice",
+  "tags": [
+    "rice",
+    "vegan",
+    "baked"
+  ],
+  "kind": "parve",
+  "servings": 6,
+  "ingredients": [
+    {
+      "name": "red pepper",
+      "qty": 6,
+      "unit": "unit"
+    },
+    {
+      "name": "rice",
+      "qty": 300,
+      "unit": "g"
+    },
+    {
+      "name": "onion",
+      "qty": 1,
+      "unit": "unit"
+    },
+    {
+      "name": "crushed tomatoes",
+      "qty": 400,
+      "unit": "g"
+    },
+    {
+      "name": "parsley",
+      "qty": 1,
+      "unit": "bunch"
+    },
+    {
+      "name": "oil",
+      "qty": 30,
+      "unit": "ml"
+    },
+    {
+      "name": "salt",
+      "qty": 1,
+      "unit": "tsp"
+    }
+  ]
+}

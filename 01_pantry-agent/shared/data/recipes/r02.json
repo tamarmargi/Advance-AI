@@ -1,0 +1,43 @@
+{
+  "id": "r02",
+  "name": "Sofrito Chicken with Potatoes",
+  "tags": [
+    "chicken",
+    "shabbat",
+    "slow-cooked"
+  ],
+  "kind": "meat",
+  "servings": 6,
+  "ingredients": [
+    {
+      "name": "chicken thighs",
+      "qty": 1200,
+      "unit": "g"
+    },
+    {
+      "name": "potatoes",
+      "qty": 1000,
+      "unit": "g"
+    },
+    {
+      "name": "garlic",
+      "qty": 6,
+      "unit": "clove"
+    },
+    {
+      "name": "turmeric",
+      "qty": 1,
+      "unit": "tsp"
+    },
+    {
+      "name": "oil",
+      "qty": 60,
+      "unit": "ml"
+    },
+    {
+      "name": "salt",
+      "qty": 1,
+      "unit": "tsp"
+    }
+  ]
+}

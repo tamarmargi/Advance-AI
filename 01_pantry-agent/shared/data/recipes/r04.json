@@ -1,0 +1,48 @@
+{
+  "id": "r04",
+  "name": "Meatballs in Tomato Sauce",
+  "tags": [
+    "beef",
+    "weeknight",
+    "kids"
+  ],
+  "kind": "meat",
+  "servings": 4,
+  "ingredients": [
+    {
+      "name": "ground beef",
+      "qty": 500,
+      "unit": "g"
+    },
+    {
+      "name": "onion",
+      "qty": 1,
+      "unit": "unit"
+    },
+    {
+      "name": "breadcrumbs",
+      "qty": 50,
+      "unit": "g"
+    },
+    {
+      "name": "eggs",
+      "qty": 1,
+      "unit": "unit"
+    },
+    {
+      "name": "crushed tomatoes",
+      "qty": 800,
+      "unit": "g"
+    },
+    {
+      "name": "garlic",
+      "qty": 3,
+      "unit": "clove"
+    },
+    {
+      "name": "salt",
+      "qty": 1,
+      "unit": "tsp"
+    }
+  ]
+}

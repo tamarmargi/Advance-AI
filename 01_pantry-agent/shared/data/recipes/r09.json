@@ -1,0 +1,48 @@
+{
+  "id": "r09",
+  "name": "Pasta with Mushroom Cream Sauce",
+  "tags": [
+    "pasta",
+    "weeknight",
+    "vegetarian"
+  ],
+  "kind": "dairy",
+  "servings": 4,
+  "ingredients": [
+    {
+      "name": "pasta",
+      "qty": 500,
+      "unit": "g"
+    },
+    {
+      "name": "mushrooms",
+      "qty": 400,
+      "unit": "g"
+    },
+    {
+      "name": "sweet cream",
+      "qty": 250,
+      "unit": "ml"
+    },
+    {
+      "name": "garlic",
+      "qty": 3,
+      "unit": "clove"
+    },
+    {
+      "name": "butter",
+      "qty": 30,
+      "unit": "g"
+    },
+    {
+      "name": "parmesan",
+      "qty": 50,
+      "unit": "g"
+    },
+    {
+      "name": "salt",
+      "qty": 1,
+      "unit": "tsp"
+    }
+  ]
+}

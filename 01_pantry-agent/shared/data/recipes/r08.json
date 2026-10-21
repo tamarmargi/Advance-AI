@@ -1,0 +1,48 @@
+{
+  "id": "r08",
+  "name": "Mushroom Quiche",
+  "tags": [
+    "baked",
+    "brunch",
+    "vegetarian"
+  ],
+  "kind": "dairy",
+  "servings": 6,
+  "ingredients": [
+    {
+      "name": "pie crust",
+      "qty": 1,
+      "unit": "unit"
+    },
+    {
+      "name": "mushrooms",
+      "qty": 300,
+      "unit": "g"
+    },
+    {
+      "name": "onion",
+      "qty": 1,
+      "unit": "unit"
+    },
+    {
+      "name": "eggs",
+      "qty": 4,
+      "unit": "unit"
+    },
+    {
+      "name": "sour cream",
+      "qty": 200,
+      "unit": "ml"
+    },
+    {
+      "name": "yellow cheese",
+      "qty": 150,
+      "unit": "g"
+    },
+    {
+      "name": "salt",
+      "qty": 1,
+      "unit": "tsp"
+    }
+  ]
+}

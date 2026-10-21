@@ -1,0 +1,49 @@
+{
+  "id": "r11",
+  "name": "Shakshuka",
+  "tags": [
+    "eggs",
+    "breakfast",
+    "vegetarian",
+    "weeknight"
+  ],
+  "kind": "parve",
+  "servings": 4,
+  "ingredients": [
+    {
+      "name": "eggs",
+      "qty": 6,
+      "unit": "unit"
+    },
+    {
+      "name": "crushed tomatoes",
+      "qty": 800,
+      "unit": "g"
+    },
+    {
+      "name": "red pepper",
+      "qty": 2,
+      "unit": "unit"
+    },
+    {
+      "name": "onion",
+      "qty": 1,
+      "unit": "unit"
+    },
+    {
+      "name": "garlic",
+      "qty": 3,
+      "unit": "clove"
+    },
+    {
+      "name": "paprika",
+      "qty": 1,
+      "unit": "tbsp"
+    },
+    {
+      "name": "oil",
+      "qty": 30,
+      "unit": "ml"
+    }
+  ]
+}

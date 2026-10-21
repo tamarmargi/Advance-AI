@@ -1,0 +1,49 @@
+{
+  "id": "r06",
+  "name": "Cholent",
+  "tags": [
+    "beef",
+    "shabbat",
+    "slow-cooked",
+    "winter"
+  ],
+  "kind": "meat",
+  "servings": 8,
+  "ingredients": [
+    {
+      "name": "beef flanken",
+      "qty": 1000,
+      "unit": "g"
+    },
+    {
+      "name": "potatoes",
+      "qty": 800,
+      "unit": "g"
+    },
+    {
+      "name": "pearl barley",
+      "qty": 200,
+      "unit": "g"
+    },
+    {
+      "name": "beans",
+      "qty": 250,
+      "unit": "g"
+    },
+    {
+      "name": "eggs",
+      "qty": 6,
+      "unit": "unit"
+    },
+    {
+      "name": "paprika",
+      "qty": 2,
+      "unit": "tbsp"
+    },
+    {
+      "name": "salt",
+      "qty": 2,
+      "unit": "tsp"
+    }
+  ]
+}

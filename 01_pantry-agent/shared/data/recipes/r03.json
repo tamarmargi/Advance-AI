@@ -1,0 +1,48 @@
+{
+  "id": "r03",
+  "name": "Beef and Mushroom Stew",
+  "tags": [
+    "beef",
+    "stew",
+    "winter"
+  ],
+  "kind": "meat",
+  "servings": 6,
+  "ingredients": [
+    {
+      "name": "beef chuck",
+      "qty": 900,
+      "unit": "g"
+    },
+    {
+      "name": "mushrooms",
+      "qty": 400,
+      "unit": "g"
+    },
+    {
+      "name": "onion",
+      "qty": 2,
+      "unit": "unit"
+    },
+    {
+      "name": "carrots",
+      "qty": 3,
+      "unit": "unit"
+    },
+    {
+      "name": "tomato paste",
+      "qty": 2,
+      "unit": "tbsp"
+    },
+    {
+      "name": "oil",
+      "qty": 30,
+      "unit": "ml"
+    },
+    {
+      "name": "salt",
+      "qty": 1,
+      "unit": "tsp"
+    }
+  ]
+}

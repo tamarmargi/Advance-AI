@@ -1,0 +1,48 @@
+{
+  "id": "r12",
+  "name": "Israeli Salad",
+  "tags": [
+    "salad",
+    "vegan",
+    "quick"
+  ],
+  "kind": "parve",
+  "servings": 4,
+  "ingredients": [
+    {
+      "name": "tomatoes",
+      "qty": 4,
+      "unit": "unit"
+    },
+    {
+      "name": "cucumbers",
+      "qty": 4,
+      "unit": "unit"
+    },
+    {
+      "name": "onion",
+      "qty": 1,
+      "unit": "unit"
+    },
+    {
+      "name": "parsley",
+      "qty": 1,
+      "unit": "bunch"
+    },
+    {
+      "name": "lemon",
+      "qty": 1,
+      "unit": "unit"
+    },
+    {
+      "name": "olive oil",
+      "qty": 30,
+      "unit": "ml"
+    },
+    {
+      "name": "salt",
+      "qty": 1,
+      "unit": "tsp"
+    }
+  ]
+}

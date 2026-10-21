@@ -1,0 +1,49 @@
+{
+  "id": "r05",
+  "name": "Chicken Soup with Kneidlach",
+  "tags": [
+    "chicken",
+    "soup",
+    "shabbat",
+    "holiday"
+  ],
+  "kind": "meat",
+  "servings": 8,
+  "ingredients": [
+    {
+      "name": "chicken pieces",
+      "qty": 1500,
+      "unit": "g"
+    },
+    {
+      "name": "carrots",
+      "qty": 4,
+      "unit": "unit"
+    },
+    {
+      "name": "celery",
+      "qty": 3,
+      "unit": "stalk"
+    },
+    {
+      "name": "onion",
+      "qty": 2,
+      "unit": "unit"
+    },
+    {
+      "name": "matzah meal",
+      "qty": 120,
+      "unit": "g"
+    },
+    {
+      "name": "eggs",
+      "qty": 3,
+      "unit": "unit"
+    },
+    {
+      "name": "salt",
+      "qty": 2,
+      "unit": "tsp"
+    }
+  ]
+}

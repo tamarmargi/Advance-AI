@@ -1,0 +1,44 @@
+{
+  "id": "r01",
+  "name": "Chicken Schnitzel",
+  "tags": [
+    "chicken",
+    "fried",
+    "kids",
+    "weeknight"
+  ],
+  "kind": "meat",
+  "servings": 4,
+  "ingredients": [
+    {
+      "name": "chicken breast",
+      "qty": 600,
+      "unit": "g"
+    },
+    {
+      "name": "eggs",
+      "qty": 2,
+      "unit": "unit"
+    },
+    {
+      "name": "breadcrumbs",
+      "qty": 150,
+      "unit": "g"
+    },
+    {
+      "name": "flour",
+      "qty": 50,
+      "unit": "g"
+    },
+    {
+      "name": "oil",
+      "qty": 200,
+      "unit": "ml"
+    },
+    {
+      "name": "salt",
+      "qty": 1,
+      "unit": "tsp"
+    }
+  ]
+}

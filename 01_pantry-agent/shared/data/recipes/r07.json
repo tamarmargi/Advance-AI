@@ -1,0 +1,39 @@
+{
+  "id": "r07",
+  "name": "Cheese Bourekas",
+  "tags": [
+    "pastry",
+    "baked",
+    "shavuot",
+    "brunch"
+  ],
+  "kind": "dairy",
+  "servings": 6,
+  "ingredients": [
+    {
+      "name": "puff pastry",
+      "qty": 500,
+      "unit": "g"
+    },
+    {
+      "name": "feta cheese",
+      "qty": 200,
+      "unit": "g"
+    },
+    {
+      "name": "cottage cheese",
+      "qty": 250,
+      "unit": "g"
+    },
+    {
+      "name": "eggs",
+      "qty": 2,
+      "unit": "unit"
+    },
+    {
+      "name": "sesame seeds",
+      "qty": 2,
+      "unit": "tbsp"
+    }
+  ]
+}

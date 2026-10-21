@@ -1,0 +1,36 @@
+{
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "sessions": [
+    {
+      "id": 1,
+      "turns": [
+        {"n": 1, "user": "אנחנו משפחה של 4, שומרים כשרות, ולא אוהבים פטריות. תזכור את זה."},
+        {"n": 2, "user": "תתכנן 3 ארוחות ערב לראשון עד שלישי, אחת מהן חלבית."},
+        {"n": 3, "user": "יש לי בבית 6 ביצים ושקית אורז."},
+        {"n": 4, "user": "תבנה את רשימת הקניות, ותבדוק פרטי מוצר של טחינה גולמית."}
+      ]
+    },
+    {
+      "id": 2,
+      "turns": [
+        {"n": 5, "user": "אילו מאכלים אני לא אוהב/ת?"},
+        {"n": 6, "user": "בעצם, עכשיו אנחנו כן אוהבים פטריות. תוסיף ארוחת ערב עם פטריות ביום רביעי."},
+        {"n": 7, "user": "יש לנו אורחים לשבת, נהיה 8. תעדכן את רשימת הקניות."}
+      ]
+    }
+  ],
+  "checks": [
+    {"id": "household_size_s1", "type": "state", "description": "preferences.household_size == 4 after session 1"},
+    {"id": "mushrooms_disliked_s1", "type": "state", "description": "mushrooms are in dislikes after session 1"},
+    {"id": "one_dairy_dinner_s1", "type": "state", "description": "session 1 plans 3 dinners Sunday-Tuesday, exactly one of them dairy"},
+    {"id": "mushrooms_not_disliked_final", "type": "state", "description": "mushrooms/פטריות are NOT in dislikes at the end (contradiction handled)"},
+    {"id": "wednesday_mushroom_dinner", "type": "state", "description": "final plan has a Wednesday dinner containing mushrooms"},
+    {"id": "no_meat_dairy_mix", "type": "state", "description": "no day+meal in any snapshot mixes meat and dairy"},
+    {"id": "shopping_no_duplicates", "type": "state", "description": "no shopping list snapshot has a duplicate name+unit"},
+    {"id": "eggs_reduced_by_pantry", "type": "state", "description": "session-1 shopping list eggs = planned eggs - 6 in pantry"},
+    {"id": "servings_doubled", "type": "state", "description": "final shopping list ≈ 2x the session-1 list for items unaffected by session-2 changes (servings 8)"},
+    {"id": "lookup_product_called", "type": "trace", "description": "lookup_product was called at least once"},
+    {"id": "turn5_from_memory", "type": "trace", "description": "turn 5 answer mentions mushrooms, sourced from get_preferences/memory with no session-1 messages in the model context"}
+  ]
+}

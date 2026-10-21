@@ -1,0 +1,48 @@
+{
+  "id": "r14",
+  "name": "Falafel",
+  "tags": [
+    "fried",
+    "vegan",
+    "street food"
+  ],
+  "kind": "parve",
+  "servings": 6,
+  "ingredients": [
+    {
+      "name": "chickpeas",
+      "qty": 500,
+      "unit": "g"
+    },
+    {
+      "name": "onion",
+      "qty": 1,
+      "unit": "unit"
+    },
+    {
+      "name": "parsley",
+      "qty": 1,
+      "unit": "bunch"
+    },
+    {
+      "name": "cilantro",
+      "qty": 1,
+      "unit": "bunch"
+    },
+    {
+      "name": "garlic",
+      "qty": 4,
+      "unit": "clove"
+    },
+    {
+      "name": "cumin",
+      "qty": 2,
+      "unit": "tsp"
+    },
+    {
+      "name": "oil",
+      "qty": 500,
+      "unit": "ml"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "r13",
+  "name": "Hummus",
+  "tags": [
+    "dip",
+    "vegan",
+    "classic"
+  ],
+  "kind": "parve",
+  "servings": 6,
+  "ingredients": [
+    {
+      "name": "chickpeas",
+      "qty": 500,
+      "unit": "g"
+    },
+    {
+      "name": "tahini",
+      "qty": 150,
+      "unit": "g"
+    },
+    {
+      "name": "lemon",
+      "qty": 2,
+      "unit": "unit"
+    },
+    {
+      "name": "garlic",
+      "qty": 2,
+      "unit": "clove"
+    },
+    {
+      "name": "olive oil",
+      "qty": 30,
+      "unit": "ml"
+    },
+    {
+      "name": "salt",
+      "qty": 1,
+      "unit": "tsp"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "hummus": {"product_name": "Hummus Classic", "brands": "Sabra", "energy-kcal_100g": 260, "proteins_100g": 7.5, "fat_100g": 21, "carbohydrates_100g": 10, "sugars_100g": 0.6},
+  "tahini": {"product_name": "Raw Tahini", "brands": "Har Bracha", "energy-kcal_100g": 650, "proteins_100g": 24, "fat_100g": 56, "carbohydrates_100g": 9, "sugars_100g": 0.5},
+  "cottage cheese": {"product_name": "Cottage Cheese 5%", "brands": "Tnuva", "energy-kcal_100g": 95, "proteins_100g": 11, "fat_100g": 5, "carbohydrates_100g": 1.5, "sugars_100g": 1.5},
+  "pasta": {"product_name": "Spaghetti No. 5", "brands": "Osem", "energy-kcal_100g": 355, "proteins_100g": 12, "fat_100g": 1.5, "carbohydrates_100g": 72, "sugars_100g": 3},
+  "mushrooms": {"product_name": "Champignon Mushrooms", "brands": "Generic", "energy-kcal_100g": 22, "proteins_100g": 3.1, "fat_100g": 0.3, "carbohydrates_100g": 3.3, "sugars_100g": 2},
+  "default": {"product_name": "Unknown product", "brands": "n/a", "energy-kcal_100g": null, "proteins_100g": null, "fat_100g": null, "carbohydrates_100g": null, "sugars_100g": null}
+}

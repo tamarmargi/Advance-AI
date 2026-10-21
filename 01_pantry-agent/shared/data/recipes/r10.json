@@ -1,0 +1,43 @@
+{
+  "id": "r10",
+  "name": "Cheese Blintzes",
+  "tags": [
+    "shavuot",
+    "brunch",
+    "sweet"
+  ],
+  "kind": "dairy",
+  "servings": 6,
+  "ingredients": [
+    {
+      "name": "flour",
+      "qty": 200,
+      "unit": "g"
+    },
+    {
+      "name": "milk",
+      "qty": 500,
+      "unit": "ml"
+    },
+    {
+      "name": "eggs",
+      "qty": 4,
+      "unit": "unit"
+    },
+    {
+      "name": "white cheese",
+      "qty": 500,
+      "unit": "g"
+    },
+    {
+      "name": "sugar",
+      "qty": 4,
+      "unit": "tbsp"
+    },
+    {
+      "name": "butter",
+      "qty": 40,
+      "unit": "g"
+    }
+  ]
+}

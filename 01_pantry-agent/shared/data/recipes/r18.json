@@ -1,0 +1,49 @@
+{
+  "id": "r18",
+  "name": "Sabich",
+  "tags": [
+    "eggplant",
+    "eggs",
+    "street food",
+    "vegetarian"
+  ],
+  "kind": "parve",
+  "servings": 4,
+  "ingredients": [
+    {
+      "name": "eggplant",
+      "qty": 2,
+      "unit": "unit"
+    },
+    {
+      "name": "eggs",
+      "qty": 4,
+      "unit": "unit"
+    },
+    {
+      "name": "pita",
+      "qty": 4,
+      "unit": "unit"
+    },
+    {
+      "name": "tahini",
+      "qty": 100,
+      "unit": "g"
+    },
+    {
+      "name": "tomatoes",
+      "qty": 2,
+      "unit": "unit"
+    },
+    {
+      "name": "cucumbers",
+      "qty": 2,
+      "unit": "unit"
+    },
+    {
+      "name": "oil",
+      "qty": 100,
+      "unit": "ml"
+    }
+  ]
+}

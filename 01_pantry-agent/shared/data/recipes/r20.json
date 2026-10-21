@@ -1,0 +1,48 @@
+{
+  "id": "r20",
+  "name": "Mushroom and Barley Soup",
+  "tags": [
+    "soup",
+    "vegan",
+    "winter"
+  ],
+  "kind": "parve",
+  "servings": 6,
+  "ingredients": [
+    {
+      "name": "mushrooms",
+      "qty": 400,
+      "unit": "g"
+    },
+    {
+      "name": "pearl barley",
+      "qty": 200,
+      "unit": "g"
+    },
+    {
+      "name": "onion",
+      "qty": 1,
+      "unit": "unit"
+    },
+    {
+      "name": "carrots",
+      "qty": 2,
+      "unit": "unit"
+    },
+    {
+      "name": "celery",
+      "qty": 2,
+      "unit": "stalk"
+    },
+    {
+      "name": "oil",
+      "qty": 30,
+      "unit": "ml"
+    },
+    {
+      "name": "salt",
+      "qty": 1,
+      "unit": "tsp"
+    }
+  ]
+}
